@@ -1,0 +1,116 @@
+// Synthetic fixture used by test/smoke.test.mjs. The schema is
+// spec/detected.schema.json-compatible and exercises every supported
+// element kind: background image, native text box, rect, roundRect,
+// ellipse, line, and a bitmap image element. The fixture references a
+// 1x1 PNG embedded as base64 so the smoke test does not depend on the
+// filesystem.
+
+{
+  "version": "1.0",
+  "source": {
+    "image_path": "fixtures/source.png",
+    "width_px": 1280,
+    "height_px": 720
+  },
+  "slide": {
+    "width": 1280,
+    "height": 720,
+    "unit": "px"
+  },
+  "background": {
+    "strategy": "original",
+    "image_path": "fixtures/source.png"
+  },
+  "elements": [
+    {
+      "id": "el_title",
+      "kind": "text",
+      "bbox": { "left": 60, "top": 60, "width": 1160, "height": 80 },
+      "z": 5,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "text": "Smoke Test Slide",
+      "font_family": "Calibri",
+      "font_size": 44,
+      "font_weight": "bold",
+      "text_color": "#1F2937",
+      "align": "left",
+      "valign": "middle"
+    },
+    {
+      "id": "el_body",
+      "kind": "text",
+      "bbox": { "left": 60, "top": 170, "width": 700, "height": 220 },
+      "z": 4,
+      "editable_score": 0.9,
+      "render_strategy": "native",
+      "text": "This fixture exercises the slide2pptx JS builder end-to-end.\nIt writes a real PPTX and a PNG preview that PowerPoint can open.",
+      "font_family": "Calibri",
+      "font_size": 22,
+      "text_color": "#374151",
+      "align": "left",
+      "valign": "top"
+    },
+    {
+      "id": "el_rect",
+      "kind": "shape",
+      "bbox": { "left": 800, "top": 170, "width": 400, "height": 110 },
+      "z": 3,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "geometry": "rect",
+      "fill": "#2563EB",
+      "line_color": "#1E40AF",
+      "line_width": 2
+    },
+    {
+      "id": "el_round",
+      "kind": "shape",
+      "bbox": { "left": 800, "top": 300, "width": 400, "height": 110 },
+      "z": 3,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "geometry": "roundRect",
+      "fill": "#10B981",
+      "line_color": "#065F46",
+      "line_width": 2
+    },
+    {
+      "id": "el_ellipse",
+      "kind": "shape",
+      "bbox": { "left": 800, "top": 430, "width": 110, "height": 110 },
+      "z": 3,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "geometry": "ellipse",
+      "fill": "#F59E0B",
+      "line_color": "#B45309",
+      "line_width": 2
+    },
+    {
+      "id": "el_line",
+      "kind": "shape",
+      "bbox": { "left": 60, "top": 620, "width": 1160, "height": 4 },
+      "z": 3,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "geometry": "line",
+      "fill": null,
+      "line_color": "#111827",
+      "line_width": 2
+    },
+    {
+      "id": "el_image",
+      "kind": "image",
+      "bbox": { "left": 60, "top": 460, "width": 320, "height": 120 },
+      "z": 2,
+      "editable_score": 0.7,
+      "render_strategy": "image",
+      "image_path": "fixtures/inline.png"
+    }
+  ],
+  "metrics": {
+    "total_elements": 7
+  },
+  "warnings": []
+}
