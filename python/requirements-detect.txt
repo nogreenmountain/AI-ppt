@@ -1,0 +1,23 @@
+# Runtime dependencies for the slide2pptx detector.
+#
+# Pillow + NumPy are the guaranteed baseline and are required at runtime.
+# The remaining entries are optional -- the detector degrades gracefully
+# when they are absent (warnings are recorded in ``detected.json``).
+
+# --- Required baseline -----------------------------------------------------
+Pillow>=10.0
+numpy>=1.26
+
+# --- Optional: OCR for native text elements --------------------------------
+# When installed, ``slide2pptx.detect`` extracts OCR boxes / text /
+# confidence and emits ``kind == "text"`` elements with the
+# ``render_strategy == "native"``.  When missing, the detector still
+# produces detected.json and the background PNG; only text elements are
+# skipped.
+rapidocr_onnxruntime>=1.3 ; python_version >= "3.8"
+
+# --- Optional: inpainting for the cleaned background -----------------------
+# When installed, OCR regions are removed from the background and saved
+# as ``cleaned-background.png``.  When missing, the original image is
+# copied verbatim to ``original-background.png``.
+opencv-python>=4.8 ; python_version >= "3.8"
