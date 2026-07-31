@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / artifact runtime dependencies
+node_modules/
+artifact-runtime/src/.self-test-out/
+
+# Generated conversion outputs
+outputs/
+
+# Local agent/plugin state
+.agent-router/
+
+# Local environment / secrets
+.env
+.env.*
+*.local
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
