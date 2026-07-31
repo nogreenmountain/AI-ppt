@@ -1,0 +1,26 @@
+{
+  "name": "slide2pptx-builder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "JS builder that turns spec/detected.schema.json-compatible JSON into an editable PPTX using @oai/artifact-tool.",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./cli": "./src/cli.mjs"
+  },
+  "bin": {
+    "slide2pptx-build": "./src/cli.mjs"
+  },
+  "scripts": {
+    "build": "echo \"Use the CLI: node src/cli.mjs build <input.json> --out <output.pptx>\"",
+    "test": "node test/run.mjs",
+    "test:smoke": "node test/smoke.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@oai/artifact-tool": "*"
+  }
+}
