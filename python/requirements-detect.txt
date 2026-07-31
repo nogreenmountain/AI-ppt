@@ -14,7 +14,7 @@ numpy>=1.26
 # ``render_strategy == "native"``.  When missing, the detector still
 # produces detected.json and the background PNG; only text elements are
 # skipped.
-rapidocr_onnxruntime>=1.3 ; python_version >= "3.8"
+rapidocr_onnxruntime>=1.3 ; python_version >= "3.8" and python_version < "3.13"
 
 # --- Optional: inpainting for the cleaned background -----------------------
 # When installed, OCR regions are removed from the background and saved

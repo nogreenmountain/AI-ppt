@@ -19,7 +19,6 @@ import {
   buildElement,
 } from "../src/index.mjs";
 import { loadImageBytes } from "../src/image-loader.mjs";
-import { Presentation, PresentationFile } from "@oai/artifact-tool";
 
 // 1x1 transparent PNG (smallest legal PNG). Embedding it here keeps the
 // test self-contained — no fixture files required on disk for the image
@@ -140,10 +139,7 @@ async function main() {
     "PPTX starts with ZIP magic bytes (PK\\x03\\x04)",
   );
 
-  // Verify the documented facade exports are still present (catches a
-  // future dependency upgrade that renames an export).
-  check(typeof Presentation?.create === "function", "Presentation.create is a function");
-  check(typeof PresentationFile?.exportPptx === "function", "PresentationFile.exportPptx is a function");
+  check(result.mime.includes("presentationml.presentation"), "PPTX MIME type is reported");
 }
 
 main().then(() => {

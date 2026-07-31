@@ -1,6 +1,5 @@
 // Focused unit tests for the coordinate / unit helpers. These are pure
-// functions, so they can run without the @oai/artifact-tool runtime
-// being present.
+// functions, so they can run without the pptxgenjs runtime being present.
 
 import {
   pxToEmu,

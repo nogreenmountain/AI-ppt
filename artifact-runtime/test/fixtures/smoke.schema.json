@@ -8,7 +8,7 @@
 {
   "version": "1.0",
   "source": {
-    "image_path": "fixtures/source.png",
+    "image_path": "source.png",
     "width_px": 1280,
     "height_px": 720
   },
@@ -19,7 +19,7 @@
   },
   "background": {
     "strategy": "original",
-    "image_path": "fixtures/source.png"
+    "image_path": "source.png"
   },
   "elements": [
     {
@@ -106,7 +106,7 @@
       "z": 2,
       "editable_score": 0.7,
       "render_strategy": "image",
-      "image_path": "fixtures/inline.png"
+      "image_path": "inline.png"
     }
   ],
   "metrics": {

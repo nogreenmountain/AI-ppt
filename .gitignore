@@ -6,10 +6,12 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+.venv/
 
 # Node / artifact runtime dependencies
 node_modules/
 artifact-runtime/src/.self-test-out/
+artifact-runtime/test/_out/
 
 # Generated conversion outputs
 outputs/

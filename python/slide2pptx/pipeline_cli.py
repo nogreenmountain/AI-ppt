@@ -19,8 +19,8 @@ The orchestrator runs the existing pieces of the project in order:
 The CLI deliberately does not re-implement detection, builder or report
 logic - it only glues those modules together. All subprocess calls use
 list-form arguments; no shell is spawned. Node discovery follows a fixed
-order: ``SLIDE2PPTX_NODE`` environment override, ``shutil.which('node')``,
-and finally ``%USERPROFILE%\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe``.
+    order: ``SLIDE2PPTX_NODE`` environment override, then
+    ``shutil.which('node')``.
 
 Exit codes:
     0   success
@@ -100,8 +100,6 @@ def find_node(runtime_root: Path | None = None) -> str:
         1. ``SLIDE2PPTX_NODE`` environment override (must exist or
            ``FileNotFoundError`` is raised).
         2. ``shutil.which('node')`` (whatever is on ``PATH``).
-        3. ``%USERPROFILE%\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe``
-           (Windows-only fallback; logs a warning when used).
     """
     override = os.environ.get("SLIDE2PPTX_NODE", "").strip()
     if override:
@@ -114,23 +112,9 @@ def find_node(runtime_root: Path | None = None) -> str:
     on_path = shutil.which("node")
     if on_path:
         return on_path
-    user_profile = os.environ.get("USERPROFILE")
-    if user_profile:
-        fallback = (
-            Path(user_profile)
-            / ".cache"
-            / "codex-runtimes"
-            / "codex-primary-runtime"
-            / "dependencies"
-            / "node"
-            / "bin"
-            / "node.exe"
-        )
-        if fallback.is_file():
-            return str(fallback)
     raise FileNotFoundError(
-        "Node.js executable not found. Set SLIDE2PPTX_NODE, add 'node' to PATH, "
-        "or install codex-primary-runtime at %USERPROFILE%\\.cache\\codex-runtimes\\codex-primary-runtime."
+        "Node.js 20+ executable not found. Run convert_image_to_ppt.bat to "
+        "auto-install project dependencies, set SLIDE2PPTX_NODE, or add node to PATH."
     )
 
 

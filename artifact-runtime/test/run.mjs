@@ -7,7 +7,7 @@
 import { spawnSync } from "node:child_process";
 import { readdirSync } from "node:fs";
 import { resolve as resolvePath, join, dirname } from "node:path";
-import { fileURLToPath, pathToFileURL } from "node:url";
+import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const only = process.argv.find((a) => a.startsWith("--only="))?.slice("--only=".length);
@@ -24,9 +24,9 @@ if (files.length === 0) {
 
 let failed = 0;
 for (const f of files) {
-  const url = pathToFileURL(join(here, f)).href;
+  const testPath = join(here, f);
   process.stdout.write(`\n=== ${f} ===\n`);
-  const result = spawnSync(process.execPath, ["--", url], {
+  const result = spawnSync(process.execPath, [testPath], {
     stdio: "inherit",
   });
   if (result.status !== 0) failed++;
