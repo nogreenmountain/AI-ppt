@@ -1,0 +1,16 @@
+# Runtime dependencies for the slide2pptx report module.
+#
+# This file is intentionally narrower than a top-level ``requirements.txt``
+# so that downstream consumers can install only what the report step needs
+# (image metrics, HTML generation, the Windows PowerPoint renderer).
+#
+# Versions are pinned to known-good combinations; relax when upstream
+# APIs change.
+
+# --- Core image / numeric stack ---------------------------------------------
+Pillow>=10.0
+numpy>=1.26
+Jinja2>=3.1
+
+# --- Test stack -------------------------------------------------------------
+pytest>=7.4
