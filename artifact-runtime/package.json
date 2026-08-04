@@ -4,6 +4,7 @@
   "private": false,
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@11.13.1",
   "description": "JS builder that turns spec/detected.schema.json-compatible JSON into an editable PPTX.",
   "main": "./src/index.mjs",
   "exports": {
@@ -22,6 +23,6 @@
     "node": ">=20"
   },
   "dependencies": {
-    "pptxgenjs": "^4.0.1"
+    "pptxgenjs": "4.0.1"
   }
 }

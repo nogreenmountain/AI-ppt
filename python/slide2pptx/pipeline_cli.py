@@ -2,11 +2,11 @@
 
 Usage::
 
-    python -m slide2pptx.pipeline_cli INPUT_IMAGE --out OUTPUT_DIR [--skip-report]
+    python -m slide2pptx.pipeline_cli INPUT_FILE --out OUTPUT_DIR [--skip-report]
 
 The orchestrator runs the existing pieces of the project in order:
 
-1. :func:`slide2pptx.detect.detect` runs on ``INPUT_IMAGE`` and writes
+1. :func:`slide2pptx.detect.detect` runs on an input image and writes
    ``detected.json`` + a background PNG into ``OUTPUT_DIR/detect``.
 2. ``node artifact-runtime/src/convert.mjs`` re-renders the detected JSON
    into ``reconstructed.pptx`` plus ``artifact-preview.png`` inside
@@ -24,7 +24,7 @@ list-form arguments; no shell is spawned. Node discovery follows a fixed
 
 Exit codes:
     0   success
-    10  input/image missing or invalid
+    10  input file missing or invalid
     20  Node runtime missing
     30  convert.mjs exited non-zero
     40  PPTX render failed
@@ -53,6 +53,7 @@ if str(_PYTHON_DIR) not in sys.path:
     sys.path.insert(0, str(_PYTHON_DIR))
 
 from slide2pptx.detect import detect  # noqa: E402
+from slide2pptx import ppt_input  # noqa: E402
 
 
 LOG = logging.getLogger("slide2pptx.pipeline_cli")
@@ -65,6 +66,7 @@ EXIT_BUILDER = 30
 EXIT_RENDER = 40
 EXIT_REPORT = 50
 EXIT_OTHER = 99
+PRESENTATION_SUFFIXES = {".ppt", ".pptx"}
 
 
 # ---------------------------------------------------------------------------
@@ -80,6 +82,14 @@ def resolve_repo_root(start: Path) -> Path:
     that marker is present we trust it. Otherwise we fall back to the
     parent of the directory holding ``slide2pptx`` and finally to ``start``.
     """
+    override = os.environ.get("SLIDE2PPTX_REPO_ROOT", "").strip()
+    if override:
+        candidate = Path(override)
+        if (candidate / "artifact-runtime").is_dir() and (candidate / "python").is_dir():
+            return candidate.resolve()
+        if (candidate / "artifact-runtime").is_dir():
+            return candidate.resolve()
+
     start = start.resolve()
     candidates: list[Path] = [start]
     for parent in start.parents:
@@ -163,6 +173,9 @@ def run_convert(
     repo_root: Path,
     detected_json: Path,
     build_dir: Path,
+    *,
+    attempts: int = 3,
+    retry_delay_s: float = 0.75,
 ) -> dict[str, Any]:
     """Invoke ``artifact-runtime/src/convert.mjs`` to produce PPTX + preview.
 
@@ -189,37 +202,70 @@ def run_convert(
         "--out", str(pptx_out.resolve()),
         "--preview", str(preview_out.resolve()),
     ]
-    LOG.info("Running convert.mjs: %s", cmd)
-    started = time.monotonic()
-    proc = subprocess.run(
-        cmd,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-        # No shell; all arguments are explicit strings.
-    )
-    duration_ms = (time.monotonic() - started) * 1000
+    attempts = max(1, attempts)
+    attempt_summaries: list[dict[str, Any]] = []
+    last_summary: dict[str, Any] | None = None
 
-    summary: dict[str, Any] = {
-        "exit_code": proc.returncode,
-        "stdout_tail": "\n".join((proc.stdout or "").splitlines()[-10:]),
-        "stderr_tail": "\n".join((proc.stderr or "").splitlines()[-10:]),
-        "duration_ms": round(duration_ms, 2),
-        "pptx": str(pptx_out.resolve()) if pptx_out.is_file() else None,
-        "preview": str(preview_out.resolve()) if preview_out.is_file() else None,
+    for attempt in range(1, attempts + 1):
+        for stale_path in (pptx_out, preview_out):
+            try:
+                stale_path.unlink()
+            except FileNotFoundError:
+                pass
+
+        LOG.info("Running convert.mjs (attempt %s/%s): %s", attempt, attempts, cmd)
+        started = time.monotonic()
+        proc = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+            # No shell; all arguments are explicit strings.
+        )
+        duration_ms = (time.monotonic() - started) * 1000
+
+        summary = {
+            "attempt": attempt,
+            "exit_code": proc.returncode,
+            "stdout_tail": "\n".join((proc.stdout or "").splitlines()[-10:]),
+            "stderr_tail": "\n".join((proc.stderr or "").splitlines()[-10:]),
+            "duration_ms": round(duration_ms, 2),
+            "pptx": str(pptx_out.resolve()) if pptx_out.is_file() else None,
+            "preview": str(preview_out.resolve()) if preview_out.is_file() else None,
+        }
+        attempt_summaries.append(summary)
+        last_summary = summary
+
+        if proc.returncode == 0 and pptx_out.is_file():
+            return {
+                **summary,
+                "attempts": attempt_summaries,
+                "retry_count": attempt - 1,
+            }
+
+        if proc.returncode == 0 and not pptx_out.is_file():
+            summary["stderr_tail"] = (
+                summary["stderr_tail"]
+                or f"convert.mjs did not write {pptx_out}"
+            )
+
+        if attempt < attempts:
+            LOG.warning(
+                "PPTX build failed on attempt %s/%s (exit=%s); retrying.",
+                attempt,
+                attempts,
+                proc.returncode,
+            )
+            time.sleep(retry_delay_s)
+
+    failure = {
+        **(last_summary or {}),
+        "attempts": attempt_summaries,
+        "retry_count": max(0, attempts - 1),
     }
-    if proc.returncode != 0:
-        raise BuilderFailure(summary)
-    if not pptx_out.is_file():
-        # convert.mjs should always have produced this file even on
-        # partial success; treat as a builder failure.
-        raise BuilderFailure({**summary, "stderr_tail": (
-            summary["stderr_tail"]
-            or f"convert.mjs did not write {pptx_out}"
-        )})
-    return summary
+    raise BuilderFailure(failure)
 
 
 class BuilderFailure(RuntimeError):
@@ -365,6 +411,151 @@ def run_report(
     }
 
 
+def run_image_pipeline(
+    image_path: Path,
+    out_dir: Path,
+    *,
+    repo_root: Path,
+    node_exe: str,
+    skip_report: bool,
+    threshold: int = 30,
+    visual_passes: int = 2,
+    second_pass_max_components: int = 96,
+) -> dict[str, Any]:
+    """Run detect -> build -> optional report for a single source image."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    detect_dir = out_dir / "detect"
+    build_dir = out_dir / "build"
+    report_dir = out_dir / "report"
+
+    result: dict[str, Any] = {
+        "ok": True,
+        "input_image": str(image_path.resolve()),
+        "out_dir": str(out_dir.resolve()),
+        "skip_report": bool(skip_report),
+    }
+
+    LOG.info("Detecting elements in %s", image_path)
+    result["detect"] = run_detect(
+        image_path,
+        detect_dir,
+        visual_passes=visual_passes,
+        second_pass_max_components=second_pass_max_components,
+    )
+    detected_json = Path(result["detect"]["detected_json"])
+
+    LOG.info("Building PPTX via %s", node_exe)
+    result["build"] = run_convert(node_exe, repo_root, detected_json, build_dir)
+
+    pptx_path = Path(result["build"]["pptx"])
+    if not pptx_path.is_file():
+        raise BuilderFailure({
+            "exit_code": 0,
+            "stderr_tail": f"builder reported success but {pptx_path} missing",
+            "pptx": None,
+        })
+
+    if skip_report:
+        LOG.info("--skip-report set; skipping PowerPoint render + report.")
+        result["report"] = {"skipped": True}
+    else:
+        render_png = report_dir / "powerPoint-render.png"
+        LOG.info("Rendering PPTX -> %s", render_png)
+        result["render"] = run_render(pptx_path, render_png)
+
+        LOG.info("Computing metrics + heatmap + HTML report")
+        result["report"] = run_report(
+            source_image=image_path,
+            rendered_image=render_png,
+            detected_json=detected_json,
+            pptx_path=pptx_path,
+            report_dir=report_dir,
+            threshold=threshold,
+        )
+    return result
+
+
+def run_presentation_pipeline(
+    presentation_path: Path,
+    out_dir: Path,
+    *,
+    repo_root: Path,
+    node_exe: str,
+    skip_report: bool,
+    threshold: int = 30,
+    visual_passes: int = 2,
+    second_pass_max_components: int = 96,
+) -> dict[str, Any]:
+    """Export a PPT/PPTX to images, then rebuild each slide independently."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    pages_dir = out_dir / "source-slides"
+    export = ppt_input.export_presentation_slides(presentation_path, pages_dir)
+
+    result: dict[str, Any] = {
+        "ok": True,
+        "input_presentation": str(presentation_path.resolve()),
+        "out_dir": str(out_dir.resolve()),
+        "slide_count": len(export.slides),
+        "source_slides": str(pages_dir.resolve()),
+        "skip_report": bool(skip_report),
+        "slides": [],
+        "failed_slides": [],
+    }
+
+    for slide in export.slides:
+        slide_dir = out_dir / f"slide-{slide.index:03d}"
+        LOG.info("Processing exported slide %s -> %s", slide.index, slide_dir)
+        try:
+            slide_result = run_image_pipeline(
+                slide.image_path,
+                slide_dir,
+                repo_root=repo_root,
+                node_exe=node_exe,
+                skip_report=skip_report,
+                threshold=threshold,
+                visual_passes=visual_passes,
+                second_pass_max_components=second_pass_max_components,
+            )
+            result["slides"].append({
+                "ok": True,
+                "index": slide.index,
+                "source_image": str(slide.image_path),
+                "out_dir": str(slide_dir.resolve()),
+                "pptx": slide_result.get("build", {}).get("pptx"),
+                "detected_json": slide_result.get("detect", {}).get("detected_json"),
+                "warnings": slide_result.get("detect", {}).get("warnings", []),
+                "retry_count": slide_result.get("build", {}).get("retry_count", 0),
+            })
+        except BuilderFailure as exc:
+            failure = {
+                "ok": False,
+                "index": slide.index,
+                "stage": "build",
+                "source_image": str(slide.image_path),
+                "out_dir": str(slide_dir.resolve()),
+                "error": str(exc),
+                "details": exc.payload,
+            }
+            LOG.error("Slide %s failed while building PPTX: %s", slide.index, exc)
+            result["slides"].append(failure)
+            result["failed_slides"].append(failure)
+        except RenderFailure as exc:
+            failure = {
+                "ok": False,
+                "index": slide.index,
+                "stage": "render",
+                "source_image": str(slide.image_path),
+                "out_dir": str(slide_dir.resolve()),
+                "error": str(exc),
+            }
+            LOG.error("Slide %s failed while rendering report: %s", slide.index, exc)
+            result["slides"].append(failure)
+            result["failed_slides"].append(failure)
+    if result["failed_slides"]:
+        result["ok"] = False
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Argument parsing & main
 # ---------------------------------------------------------------------------
@@ -379,9 +570,9 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-        "input_image",
+        "input_file",
         type=Path,
-        help="Path to the input slide image (PNG/JPG/etc.).",
+        help="Path to an input slide image (PNG/JPG/etc.) or PPT/PPTX deck.",
     )
     parser.add_argument(
         "--out",
@@ -447,44 +638,21 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s %(levelname)s %(name)s | %(message)s",
     )
 
-    image_path: Path = parser.input_image
+    input_path: Path = parser.input_file
     out_dir: Path = parser.out_dir
-    if not image_path.is_file():
+    if not input_path.is_file():
         print(
             json.dumps(
-                {"ok": False, "stage": "input", "error": f"input image not found: {image_path}"},
+                {"ok": False, "stage": "input", "error": f"input file not found: {input_path}"},
                 indent=2,
             ),
             file=sys.stderr,
         )
         return EXIT_INPUT
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    detect_dir = out_dir / "detect"
-    build_dir = out_dir / "build"
-    report_dir = out_dir / "report"
-
     repo_root = resolve_repo_root(_THIS_FILE.parent)
 
-    result: dict[str, Any] = {
-        "ok": True,
-        "input_image": str(image_path.resolve()),
-        "out_dir": str(out_dir.resolve()),
-        "skip_report": bool(parser.skip_report),
-    }
-
     try:
-        # Step 1: detect ----------------------------------------------------
-        LOG.info("Detecting elements in %s", image_path)
-        result["detect"] = run_detect(
-            image_path,
-            detect_dir,
-            visual_passes=parser.visual_passes,
-            second_pass_max_components=parser.second_pass_max_components,
-        )
-        detected_json = Path(result["detect"]["detected_json"])
-
-        # Step 2: convert (PPTX + preview via Node) -------------------------
         try:
             node_exe = find_node()
         except FileNotFoundError as exc:
@@ -497,87 +665,62 @@ def main(argv: list[str] | None = None) -> int:
             )
             return EXIT_NODE_MISSING
 
-        LOG.info("Building PPTX + preview via %s", node_exe)
-        try:
-            result["build"] = run_convert(
-                node_exe, repo_root, detected_json, build_dir
+        if input_path.suffix.lower() in PRESENTATION_SUFFIXES:
+            result = run_presentation_pipeline(
+                input_path,
+                out_dir,
+                repo_root=repo_root,
+                node_exe=node_exe,
+                skip_report=parser.skip_report,
+                threshold=parser.threshold,
+                visual_passes=parser.visual_passes,
+                second_pass_max_components=parser.second_pass_max_components,
             )
-        except BuilderFailure as exc:
-            payload = exc.payload
-            print(
-                json.dumps(
-                    {
-                        "ok": False,
-                        "stage": "build",
-                        "error": str(exc),
-                        "details": payload,
-                    },
-                    indent=2,
-                ),
-                file=sys.stderr,
-            )
-            return EXIT_BUILDER
-
-        pptx_path = Path(result["build"]["pptx"])
-        if not pptx_path.is_file():
-            print(
-                json.dumps(
-                    {
-                        "ok": False,
-                        "stage": "build",
-                        "error": f"builder reported success but {pptx_path} missing",
-                    },
-                    indent=2,
-                ),
-                file=sys.stderr,
-            )
-            return EXIT_BUILDER
-
-        # Step 3: PowerPoint render + report (optional) ---------------------
-        if parser.skip_report:
-            LOG.info("--skip-report set; skipping PowerPoint render + report.")
-            result["report"] = {"skipped": True}
         else:
-            try:
-                render_png = report_dir / "powerPoint-render.png"
-                LOG.info("Rendering PPTX -> %s", render_png)
-                render_summary = run_render(pptx_path, render_png)
-                result["render"] = render_summary
-
-                LOG.info("Computing metrics + heatmap + HTML report")
-                result["report"] = run_report(
-                    source_image=image_path,
-                    rendered_image=render_png,
-                    detected_json=detected_json,
-                    pptx_path=pptx_path,
-                    report_dir=report_dir,
-                    threshold=parser.threshold,
-                )
-            except RenderFailure as exc:
-                print(
-                    json.dumps(
-                        {"ok": False, "stage": "render", "error": str(exc)},
-                        indent=2,
-                    ),
-                    file=sys.stderr,
-                )
-                return EXIT_RENDER
-            except Exception as exc:  # noqa: BLE001 - defensive
-                print(
-                    json.dumps(
-                        {
-                            "ok": False,
-                            "stage": "report",
-                            "error": f"{type(exc).__name__}: {exc}",
-                        },
-                        indent=2,
-                    ),
-                    file=sys.stderr,
-                )
-                return EXIT_REPORT
+            result = run_image_pipeline(
+                input_path,
+                out_dir,
+                repo_root=repo_root,
+                node_exe=node_exe,
+                skip_report=parser.skip_report,
+                threshold=parser.threshold,
+                visual_passes=parser.visual_passes,
+                second_pass_max_components=parser.second_pass_max_components,
+            )
 
         print(json.dumps(_build_result(result), indent=2))
+        if result.get("ok") is False:
+            failed_slides = result.get("failed_slides") or []
+            if failed_slides and failed_slides[0].get("stage") == "render":
+                return EXIT_RENDER
+            return EXIT_BUILDER
         return EXIT_OK
+    except BuilderFailure as exc:
+        print(
+            json.dumps(
+                {
+                    "ok": False,
+                    "stage": "build",
+                    "error": str(exc),
+                    "details": exc.payload,
+                },
+                indent=2,
+            ),
+            file=sys.stderr,
+        )
+        return EXIT_BUILDER
+    except RenderFailure as exc:
+        print(
+            json.dumps({"ok": False, "stage": "render", "error": str(exc)}, indent=2),
+            file=sys.stderr,
+        )
+        return EXIT_RENDER
+    except ppt_input.PresentationInputError as exc:
+        print(
+            json.dumps({"ok": False, "stage": "presentation", "error": str(exc)}, indent=2),
+            file=sys.stderr,
+        )
+        return EXIT_INPUT
     except Exception as exc:  # pragma: no cover - defensive
         LOG.exception("Unexpected error: %s", exc)
         print(

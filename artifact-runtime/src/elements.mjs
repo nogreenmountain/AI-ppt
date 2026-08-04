@@ -1,14 +1,36 @@
-import { normaliseBBox } from "./coordinates.mjs";
+import { normaliseBBox, pxToPt } from "./coordinates.mjs";
 
 const COLOR_RE = /^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$/;
+const CHINESE_RE = /[\u3400-\u9fff]/u;
+const OCR_FONT_CALIBRATION = 0.91;
+const SINGLE_LATIN_RE = /^[A-Za-z]$/u;
 
 export function resolveColor(value, fallback = "#000000") {
   if (typeof value !== "string" || !COLOR_RE.test(value)) return fallback;
   return value.toUpperCase();
 }
 
-export function resolveFontFamily(value) {
+export function resolveFontFamily(value, text = "") {
+  if (CHINESE_RE.test(String(text))) return "Microsoft YaHei";
   return typeof value === "string" && value.trim() ? value.trim() : "Calibri";
+}
+
+export function colorLuminance(hexColor) {
+  const value = resolveColor(hexColor, "#000000").slice(1, 7);
+  const r = Number.parseInt(value.slice(0, 2), 16);
+  const g = Number.parseInt(value.slice(2, 4), 16);
+  const b = Number.parseInt(value.slice(4, 6), 16);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+export function isSpuriousOcrGlyph(el) {
+  const text = String(el.text ?? "").trim();
+  if (!SINGLE_LATIN_RE.test(text)) return false;
+  const bbox = normaliseBBox(el.bbox);
+  const confidence = Number(el.confidence?.ocr ?? el.editable_score ?? 1);
+  const isSmallBox = bbox.width <= 30 && bbox.height <= 25;
+  const isWhiteInk = colorLuminance(el.text_color) >= 245;
+  return isSmallBox && isWhiteInk && confidence < 0.82;
 }
 
 export function inferFontSizePt(heightPx) {
@@ -18,9 +40,20 @@ export function inferFontSizePt(heightPx) {
 }
 
 export function buildTextElement(el) {
-  const bbox = normaliseBBox(el.bbox);
-  const fontSize = Number(el.font_size) || inferFontSizePt(bbox.height);
-  const fontFamily = resolveFontFamily(el.font_family);
+  const rawBBox = normaliseBBox(el.bbox);
+  const extraW = Math.max(4, Math.min(18, rawBBox.width * 0.05));
+  const extraH = Math.max(2, Math.min(6, rawBBox.height * 0.16));
+  const bbox = {
+    left: Math.max(0, rawBBox.left - extraW / 2),
+    top: Math.max(0, rawBBox.top - extraH / 2),
+    width: rawBBox.width + extraW,
+    height: rawBBox.height + extraH,
+  };
+  const explicitFontSize = Number(el.font_size);
+  const fontSize = Number.isFinite(explicitFontSize) && explicitFontSize > 0
+    ? pxToPt(explicitFontSize) * OCR_FONT_CALIBRATION
+    : inferFontSizePt(rawBBox.height);
+  const fontFamily = resolveFontFamily(el.font_family, el.text);
   const color = resolveColor(el.text_color);
   const bold = el.font_weight === "bold";
   const italic = el.font_style === "italic";
@@ -94,7 +127,7 @@ export function buildImageElement(el, imageBytes = null) {
 }
 
 export function buildElement(el, imageBytes = null) {
-  if (el.kind === "text") return buildTextElement(el);
+  if (el.kind === "text") return isSpuriousOcrGlyph(el) ? null : buildTextElement(el);
   if (el.kind === "shape") return buildShapeElement(el);
   if (el.kind === "image") return buildImageElement(el, imageBytes);
   return null;

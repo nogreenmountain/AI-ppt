@@ -7,7 +7,10 @@ from slide2pptx.detect import core
 
 
 @pytest.mark.skipif(core.cv2 is None, reason="opencv-python is not installed")
-def test_detect_exports_visual_components(tmp_path: Path) -> None:
+def test_detect_exports_visual_components(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(core, "RapidOCR", None)
     img = Image.new("RGB", (1280, 720), "#F7FAFF")
     draw = ImageDraw.Draw(img)
     draw.rounded_rectangle((120, 140, 360, 300), radius=28, fill="#2563EB")
@@ -85,3 +88,27 @@ def test_iterative_residual_components_are_tagged_as_second_pass(tmp_path: Path)
         for el in elements
     )
     assert all(Path(el["image_path"]).is_file() for el in elements)
+
+
+def test_unpack_current_rapidocr_output() -> None:
+    class Output:
+        boxes = [
+            [[10.0, 20.0], [110.0, 20.0], [110.0, 50.0], [10.0, 50.0]]
+        ]
+        txts = ("中文标题",)
+        scores = (0.98,)
+
+    boxes, texts, scores = core._unpack_ocr_result(Output())
+
+    assert len(boxes) == 1
+    assert texts == ["中文标题"]
+    assert scores == [0.98]
+
+
+def test_unpack_legacy_rapidocr_output() -> None:
+    box = [[10.0, 20.0], [110.0, 20.0], [110.0, 50.0], [10.0, 50.0]]
+    boxes, texts, scores = core._unpack_ocr_result(([[box, "标题", 0.95]], 0.1))
+
+    assert boxes == [box]
+    assert texts == ["标题"]
+    assert scores == [0.95]

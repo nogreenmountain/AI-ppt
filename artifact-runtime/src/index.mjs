@@ -47,6 +47,7 @@ function addText(slide, node) {
     ...box,
     margin: 0,
     breakLine: false,
+    wrap: false,
     fit: "shrink",
     fontFace: p.fontFamily,
     fontSize: p.fontSize,

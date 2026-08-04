@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       pptxgenjs:
-        specifier: ^4.0.1
+        specifier: 4.0.1
         version: 4.0.1
 
 packages:

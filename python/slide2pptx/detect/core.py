@@ -6,8 +6,9 @@ This module turns a slide screenshot into a structured
 small and degrades gracefully when optional dependencies are missing:
 
 * Pillow + NumPy are guaranteed baselines (always required).
-* ``rapidocr_onnxruntime`` (optional) extracts OCR boxes/text/confidence
-  and produces native text elements.
+* RapidOCR (optional) extracts OCR boxes/text/confidence and produces
+  native text elements. Both the legacy ``rapidocr_onnxruntime`` package
+  and the current ``rapidocr`` package are supported.
 * ``cv2`` / OpenCV (optional) inpaints the OCR regions into
   ``cleaned-background.png``; otherwise the original image is copied
   as ``original-background.png`` and a warning is recorded.
@@ -33,8 +34,16 @@ from PIL import Image
 
 try:  # pragma: no cover - exercised only when optional dep is installed
     from rapidocr_onnxruntime import RapidOCR  # type: ignore
+    _OCR_FONT_HEIGHT_SCALE = 1.0
 except Exception:  # noqa: BLE001 - any import failure is treated as "missing"
-    RapidOCR = None  # type: ignore[assignment]
+    try:  # pragma: no cover - depends on the active Python runtime
+        from rapidocr import RapidOCR  # type: ignore
+        # RapidOCR 3.x boxes include more vertical padding than the legacy
+        # package. Calibrate them back to the older, visually verified bounds.
+        _OCR_FONT_HEIGHT_SCALE = 0.86
+    except Exception:  # noqa: BLE001
+        RapidOCR = None  # type: ignore[assignment]
+        _OCR_FONT_HEIGHT_SCALE = 1.0
 
 try:  # pragma: no cover - exercised only when optional dep is installed
     import cv2  # type: ignore
@@ -82,6 +91,52 @@ def _scale_box(
         "width": round((right - left) * sx, 2),
         "height": round((bottom - top) * sy, 2),
     }
+
+
+def _unpack_ocr_result(
+    ocr_result: Any,
+) -> tuple[list[Any], list[str], list[float]]:
+    """Normalize legacy and current RapidOCR result formats."""
+
+    if ocr_result is None:
+        return [], [], []
+
+    # RapidOCR 3.x returns a RapidOCROutput object.
+    if hasattr(ocr_result, "boxes"):
+        raw_boxes = getattr(ocr_result, "boxes", None)
+        raw_texts = getattr(ocr_result, "txts", None)
+        raw_scores = getattr(ocr_result, "scores", None)
+        return (
+            list(raw_boxes) if raw_boxes is not None else [],
+            [str(value) for value in raw_texts] if raw_texts is not None else [],
+            [float(value) for value in raw_scores] if raw_scores is not None else [],
+        )
+
+    # rapidocr-onnxruntime 1.4 returns ``(lines, elapsed)`` where each
+    # line is ``[box, text, score]``.
+    if (
+        len(ocr_result) == 2
+        and isinstance(ocr_result[0], (list, tuple))
+        and ocr_result[0]
+        and isinstance(ocr_result[0][0], (list, tuple))
+        and len(ocr_result[0][0]) >= 3
+    ):
+        lines = list(ocr_result[0])
+        return (
+            [line[0] for line in lines],
+            [str(line[1]) for line in lines],
+            [float(line[2]) for line in lines],
+        )
+
+    # Older releases returned ``(boxes, texts, scores, ...)``.
+    if len(ocr_result) >= 3:
+        return (
+            list(ocr_result[0] or []),
+            [str(value) for value in (ocr_result[1] or [])],
+            [float(value) for value in (ocr_result[2] or [])],
+        )
+
+    return list(ocr_result[0] or []), [], []
 
 
 def _scale_xywh(
@@ -141,7 +196,7 @@ def _estimate_font_size(box_height_px: float) -> float:
 
     if box_height_px <= 0:
         return 12.0
-    return max(round(box_height_px, 1), 8.0)
+    return max(round(box_height_px * _OCR_FONT_HEIGHT_SCALE, 1), 8.0)
 
 
 def _make_id(prefix: str = "el") -> str:
@@ -1011,34 +1066,7 @@ def detect(
         try:
             engine = RapidOCR()
             ocr_result = engine(str(src_path))
-            # rapidocr-onnxruntime returns either:
-            #   (boxes, texts, scores)            -- older versions
-            #   (boxes, texts, scores, det_elapse) -- newer versions
-            #   or None when nothing is detected.
-            boxes: list[Any] = []
-            texts: list[str] = []
-            scores: list[float] = []
-            if ocr_result is not None:
-                # rapidocr_onnxruntime 1.4 returns ``(lines, elapsed)`` where
-                # each line is ``[box, text, score]``. Older releases returned
-                # ``(boxes, texts, scores, ...)``. Accept both layouts.
-                if (
-                    len(ocr_result) == 2
-                    and isinstance(ocr_result[0], (list, tuple))
-                    and ocr_result[0]
-                    and isinstance(ocr_result[0][0], (list, tuple))
-                    and len(ocr_result[0][0]) >= 3
-                ):
-                    lines = list(ocr_result[0])
-                    boxes = [line[0] for line in lines]
-                    texts = [line[1] for line in lines]
-                    scores = [line[2] for line in lines]
-                elif len(ocr_result) >= 3:
-                    boxes = list(ocr_result[0] or [])
-                    texts = list(ocr_result[1] or [])
-                    scores = list(ocr_result[2] or [])
-                else:  # pragma: no cover - unusual shape
-                    boxes = list(ocr_result[0] or [])
+            boxes, texts, scores = _unpack_ocr_result(ocr_result)
             for idx, box in enumerate(boxes):
                 if box is None:
                     continue
@@ -1081,7 +1109,7 @@ def detect(
             warnings.append(f"OCR failed: {exc}")
     else:
         warnings.append(
-            "rapidocr_onnxruntime not installed; native text elements skipped."
+            "OCR component not installed; native text elements skipped."
         )
 
     visual_text_boxes_src = list(ocr_boxes_src)
@@ -1096,7 +1124,7 @@ def detect(
             if heuristic_text_boxes_src and not ocr_text_elements:
                 warnings.append(
                     "heuristic text-like regions detected for component separation; "
-                    "install rapidocr_onnxruntime to emit editable text."
+                    "install the OCR component to emit editable text."
                 )
         except Exception as exc:  # noqa: BLE001
             warnings.append(f"heuristic text-region detection failed: {exc}")

@@ -1,0 +1,5028 @@
+{
+  "version": "1.0",
+  "source": {
+    "image_path": "C:\\Users\\tangvx\\AppData\\Local\\Temp\\codex-clipboard-6b94462e-de9c-488d-a99f-70d2e4441038.png",
+    "width_px": 1999,
+    "height_px": 1125
+  },
+  "slide": {
+    "width": 1280.0,
+    "height": 720.0,
+    "unit": "px"
+  },
+  "background": {
+    "strategy": "cleaned",
+    "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\cleaned-background.png",
+    "fill": "#FAFBFD"
+  },
+  "elements": [
+    {
+      "id": "el_pass2_534f6643cc44",
+      "kind": "image",
+      "bbox": {
+        "left": 423.25,
+        "top": 264.96,
+        "width": 24.33,
+        "height": 8.96
+      },
+      "z": -300,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_534f6643cc44.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.017
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 661,
+          "top": 414,
+          "width": 38,
+          "height": 14
+        },
+        "source_area_px": 201
+      }
+    },
+    {
+      "id": "el_pass2_62c7a469566d",
+      "kind": "image",
+      "bbox": {
+        "left": 78.12,
+        "top": 357.76,
+        "width": 11.53,
+        "height": 23.04
+      },
+      "z": -299,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_62c7a469566d.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.017
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 122,
+          "top": 559,
+          "width": 18,
+          "height": 36
+        },
+        "source_area_px": 209
+      }
+    },
+    {
+      "id": "el_pass2_08023407cd3e",
+      "kind": "image",
+      "bbox": {
+        "left": 595.5,
+        "top": 530.56,
+        "width": 42.26,
+        "height": 5.76
+      },
+      "z": -298,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_08023407cd3e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.018
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 930,
+          "top": 829,
+          "width": 66,
+          "height": 9
+        },
+        "source_area_px": 216
+      }
+    },
+    {
+      "id": "el_pass2_9bc8d530c018",
+      "kind": "image",
+      "bbox": {
+        "left": 334.25,
+        "top": 257.92,
+        "width": 31.38,
+        "height": 11.52
+      },
+      "z": -297,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_9bc8d530c018.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.018
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 522,
+          "top": 403,
+          "width": 49,
+          "height": 18
+        },
+        "source_area_px": 222
+      }
+    },
+    {
+      "id": "el_pass2_aa26473863ac",
+      "kind": "image",
+      "bbox": {
+        "left": 510.98,
+        "top": 305.92,
+        "width": 20.49,
+        "height": 7.04
+      },
+      "z": -296,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_aa26473863ac.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.019
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 798,
+          "top": 478,
+          "width": 32,
+          "height": 11
+        },
+        "source_area_px": 224
+      }
+    },
+    {
+      "id": "el_pass2_3d7d38fb1d46",
+      "kind": "image",
+      "bbox": {
+        "left": 938.07,
+        "top": 247.68,
+        "width": 13.45,
+        "height": 21.12
+      },
+      "z": -295,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_3d7d38fb1d46.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.022
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1465,
+          "top": 387,
+          "width": 21,
+          "height": 33
+        },
+        "source_area_px": 268
+      }
+    },
+    {
+      "id": "el_pass2_2303a0eb62fd",
+      "kind": "image",
+      "bbox": {
+        "left": 423.89,
+        "top": 244.48,
+        "width": 22.41,
+        "height": 9.6
+      },
+      "z": -294,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_2303a0eb62fd.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.023
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 662,
+          "top": 382,
+          "width": 35,
+          "height": 15
+        },
+        "source_area_px": 277
+      }
+    },
+    {
+      "id": "el_pass2_77411135557f",
+      "kind": "image",
+      "bbox": {
+        "left": 68.51,
+        "top": 446.08,
+        "width": 21.77,
+        "height": 28.8
+      },
+      "z": -293,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_77411135557f.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.024
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 107,
+          "top": 697,
+          "width": 34,
+          "height": 45
+        },
+        "source_area_px": 289
+      }
+    },
+    {
+      "id": "el_pass2_85dbf152200b",
+      "kind": "image",
+      "bbox": {
+        "left": 466.79,
+        "top": 482.56,
+        "width": 29.45,
+        "height": 13.44
+      },
+      "z": -292,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_85dbf152200b.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.03
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 729,
+          "top": 754,
+          "width": 46,
+          "height": 21
+        },
+        "source_area_px": 358
+      }
+    },
+    {
+      "id": "el_pass2_77b187eaf324",
+      "kind": "image",
+      "bbox": {
+        "left": 1009.78,
+        "top": 95.36,
+        "width": 73.64,
+        "height": 2.56
+      },
+      "z": -291,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_77b187eaf324.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.031
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1577,
+          "top": 149,
+          "width": 115,
+          "height": 4
+        },
+        "source_area_px": 368
+      }
+    },
+    {
+      "id": "el_pass2_41113ed17f0a",
+      "kind": "image",
+      "bbox": {
+        "left": 706.27,
+        "top": 474.24,
+        "width": 28.81,
+        "height": 21.12
+      },
+      "z": -290,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_41113ed17f0a.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.032
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1103,
+          "top": 741,
+          "width": 45,
+          "height": 33
+        },
+        "source_area_px": 388
+      }
+    },
+    {
+      "id": "el_pass2_54213f70f8bc",
+      "kind": "image",
+      "bbox": {
+        "left": 1153.86,
+        "top": 65.92,
+        "width": 32.02,
+        "height": 13.44
+      },
+      "z": -289,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_54213f70f8bc.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.041
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1802,
+          "top": 103,
+          "width": 50,
+          "height": 21
+        },
+        "source_area_px": 493
+      }
+    },
+    {
+      "id": "el_pass2_51df703d6c2d",
+      "kind": "image",
+      "bbox": {
+        "left": 464.87,
+        "top": 455.68,
+        "width": 32.02,
+        "height": 28.8
+      },
+      "z": -288,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_51df703d6c2d.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.049
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 726,
+          "top": 712,
+          "width": 50,
+          "height": 45
+        },
+        "source_area_px": 586
+      }
+    },
+    {
+      "id": "el_pass2_2adaeb8e080e",
+      "kind": "image",
+      "bbox": {
+        "left": 654.41,
+        "top": 91.52,
+        "width": 137.67,
+        "height": 1.92
+      },
+      "z": -287,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_2adaeb8e080e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.05
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1022,
+          "top": 143,
+          "width": 215,
+          "height": 3
+        },
+        "source_area_px": 604
+      }
+    },
+    {
+      "id": "el_pass2_80c7f1c5aa95",
+      "kind": "image",
+      "bbox": {
+        "left": 378.43,
+        "top": 149.12,
+        "width": 51.87,
+        "height": 14.08
+      },
+      "z": -286,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_80c7f1c5aa95.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.051
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 591,
+          "top": 233,
+          "width": 81,
+          "height": 22
+        },
+        "source_area_px": 606
+      }
+    },
+    {
+      "id": "el_pass2_7353972a6fc6",
+      "kind": "image",
+      "bbox": {
+        "left": 308.63,
+        "top": 517.12,
+        "width": 78.12,
+        "height": 14.08
+      },
+      "z": -285,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_7353972a6fc6.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.069
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 482,
+          "top": 808,
+          "width": 122,
+          "height": 22
+        },
+        "source_area_px": 830
+      }
+    },
+    {
+      "id": "el_pass2_c0b10efd42d5",
+      "kind": "image",
+      "bbox": {
+        "left": 583.33,
+        "top": 457.6,
+        "width": 30.74,
+        "height": 38.4
+      },
+      "z": -284,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_c0b10efd42d5.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.076
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 911,
+          "top": 715,
+          "width": 48,
+          "height": 60
+        },
+        "source_area_px": 911
+      }
+    },
+    {
+      "id": "el_pass2_7e1335a233f5",
+      "kind": "image",
+      "bbox": {
+        "left": 386.75,
+        "top": 522.88,
+        "width": 121.02,
+        "height": 13.44
+      },
+      "z": -283,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_7e1335a233f5.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.094
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 604,
+          "top": 817,
+          "width": 189,
+          "height": 21
+        },
+        "source_area_px": 1130
+      }
+    },
+    {
+      "id": "el_pass2_0a167785cea9",
+      "kind": "image",
+      "bbox": {
+        "left": 644.16,
+        "top": 519.68,
+        "width": 133.19,
+        "height": 16.64
+      },
+      "z": -282,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0a167785cea9.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.108
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1006,
+          "top": 812,
+          "width": 208,
+          "height": 26
+        },
+        "source_area_px": 1297
+      }
+    },
+    {
+      "id": "el_pass2_75edf2de7df6",
+      "kind": "image",
+      "bbox": {
+        "left": 605.74,
+        "top": 165.76,
+        "width": 71.72,
+        "height": 36.48
+      },
+      "z": -281,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_75edf2de7df6.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.131
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 946,
+          "top": 259,
+          "width": 112,
+          "height": 57
+        },
+        "source_area_px": 1574
+      }
+    },
+    {
+      "id": "el_pass2_1d49d29aa103",
+      "kind": "image",
+      "bbox": {
+        "left": 1189.71,
+        "top": 23.04,
+        "width": 39.7,
+        "height": 33.28
+      },
+      "z": -280,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_1d49d29aa103.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.154
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1858,
+          "top": 36,
+          "width": 62,
+          "height": 52
+        },
+        "source_area_px": 1851
+      }
+    },
+    {
+      "id": "el_pass2_adc15d7f8261",
+      "kind": "image",
+      "bbox": {
+        "left": 970.09,
+        "top": 151.68,
+        "width": 263.81,
+        "height": 48.64
+      },
+      "z": -279,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_adc15d7f8261.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.425
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 1515,
+          "top": 237,
+          "width": 412,
+          "height": 76
+        },
+        "source_area_px": 5106
+      }
+    },
+    {
+      "id": "el_pass2_219bec9b3e45",
+      "kind": "image",
+      "bbox": {
+        "left": 43.54,
+        "top": 151.68,
+        "width": 268.29,
+        "height": 50.56
+      },
+      "z": -278,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_219bec9b3e45.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.475
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "faint_structure",
+        "source_bbox_px": {
+          "left": 68,
+          "top": 237,
+          "width": 419,
+          "height": 79
+        },
+        "source_area_px": 5702
+      }
+    },
+    {
+      "id": "el_pass2_4342995f618a",
+      "kind": "image",
+      "bbox": {
+        "left": 405.32,
+        "top": 325.12,
+        "width": 8.32,
+        "height": 2.56
+      },
+      "z": -277,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_4342995f618a.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 633,
+          "top": 508,
+          "width": 13,
+          "height": 4
+        },
+        "source_area_px": 45
+      }
+    },
+    {
+      "id": "el_pass2_813f9fed8a1e",
+      "kind": "image",
+      "bbox": {
+        "left": 1218.53,
+        "top": 22.4,
+        "width": 5.12,
+        "height": 5.12
+      },
+      "z": -276,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_813f9fed8a1e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1903,
+          "top": 35,
+          "width": 8,
+          "height": 8
+        },
+        "source_area_px": 46
+      }
+    },
+    {
+      "id": "el_pass2_e3a8c346720b",
+      "kind": "image",
+      "bbox": {
+        "left": 320.16,
+        "top": 666.88,
+        "width": 6.4,
+        "height": 10.24
+      },
+      "z": -275,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_e3a8c346720b.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 500,
+          "top": 1042,
+          "width": 10,
+          "height": 16
+        },
+        "source_area_px": 46
+      }
+    },
+    {
+      "id": "el_pass2_6a5537c296da",
+      "kind": "image",
+      "bbox": {
+        "left": 374.59,
+        "top": 325.12,
+        "width": 8.32,
+        "height": 2.56
+      },
+      "z": -274,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_6a5537c296da.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 585,
+          "top": 508,
+          "width": 13,
+          "height": 4
+        },
+        "source_area_px": 49
+      }
+    },
+    {
+      "id": "el_pass2_0907832dcab0",
+      "kind": "image",
+      "bbox": {
+        "left": 486.0,
+        "top": 480.64,
+        "width": 7.04,
+        "height": 5.76
+      },
+      "z": -273,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0907832dcab0.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 759,
+          "top": 751,
+          "width": 11,
+          "height": 9
+        },
+        "source_area_px": 49
+      }
+    },
+    {
+      "id": "el_pass2_4227c280fd7f",
+      "kind": "image",
+      "bbox": {
+        "left": 383.55,
+        "top": 325.12,
+        "width": 8.32,
+        "height": 2.56
+      },
+      "z": -272,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_4227c280fd7f.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 599,
+          "top": 508,
+          "width": 13,
+          "height": 4
+        },
+        "source_area_px": 50
+      }
+    },
+    {
+      "id": "el_pass2_b3ecd4ba0bef",
+      "kind": "image",
+      "bbox": {
+        "left": 902.85,
+        "top": 325.12,
+        "width": 13.45,
+        "height": 1.92
+      },
+      "z": -271,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_b3ecd4ba0bef.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1410,
+          "top": 508,
+          "width": 21,
+          "height": 3
+        },
+        "source_area_px": 50
+      }
+    },
+    {
+      "id": "el_pass2_79f65a0460a1",
+      "kind": "image",
+      "bbox": {
+        "left": 358.58,
+        "top": 430.72,
+        "width": 10.25,
+        "height": 8.96
+      },
+      "z": -270,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_79f65a0460a1.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 560,
+          "top": 673,
+          "width": 16,
+          "height": 14
+        },
+        "source_area_px": 50
+      }
+    },
+    {
+      "id": "el_pass2_e49c63b15acb",
+      "kind": "image",
+      "bbox": {
+        "left": 208.74,
+        "top": 530.56,
+        "width": 9.6,
+        "height": 6.4
+      },
+      "z": -269,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_e49c63b15acb.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 326,
+          "top": 829,
+          "width": 15,
+          "height": 10
+        },
+        "source_area_px": 50
+      }
+    },
+    {
+      "id": "el_pass2_f706415afa43",
+      "kind": "image",
+      "bbox": {
+        "left": 979.05,
+        "top": 666.88,
+        "width": 7.04,
+        "height": 10.88
+      },
+      "z": -268,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_f706415afa43.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.004
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1529,
+          "top": 1042,
+          "width": 11,
+          "height": 17
+        },
+        "source_area_px": 52
+      }
+    },
+    {
+      "id": "el_pass2_4bd92dc9e544",
+      "kind": "image",
+      "bbox": {
+        "left": 393.8,
+        "top": 325.12,
+        "width": 8.96,
+        "height": 2.56
+      },
+      "z": -267,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_4bd92dc9e544.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 615,
+          "top": 508,
+          "width": 14,
+          "height": 4
+        },
+        "source_area_px": 55
+      }
+    },
+    {
+      "id": "el_pass2_ca999e764c36",
+      "kind": "image",
+      "bbox": {
+        "left": 1020.67,
+        "top": 661.12,
+        "width": 8.32,
+        "height": 8.32
+      },
+      "z": -266,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_ca999e764c36.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1594,
+          "top": 1033,
+          "width": 13,
+          "height": 13
+        },
+        "source_area_px": 56
+      }
+    },
+    {
+      "id": "el_pass2_5db0495b27eb",
+      "kind": "image",
+      "bbox": {
+        "left": 1020.67,
+        "top": 672.0,
+        "width": 7.68,
+        "height": 7.68
+      },
+      "z": -265,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_5db0495b27eb.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1594,
+          "top": 1050,
+          "width": 12,
+          "height": 12
+        },
+        "source_area_px": 56
+      }
+    },
+    {
+      "id": "el_pass2_42a14da7b9f8",
+      "kind": "image",
+      "bbox": {
+        "left": 281.74,
+        "top": 550.4,
+        "width": 8.96,
+        "height": 3.84
+      },
+      "z": -264,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_42a14da7b9f8.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 440,
+          "top": 860,
+          "width": 14,
+          "height": 6
+        },
+        "source_area_px": 61
+      }
+    },
+    {
+      "id": "el_pass2_57bdb2b8f7ff",
+      "kind": "image",
+      "bbox": {
+        "left": 589.73,
+        "top": 207.36,
+        "width": 11.53,
+        "height": 3.2
+      },
+      "z": -263,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_57bdb2b8f7ff.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 921,
+          "top": 324,
+          "width": 18,
+          "height": 5
+        },
+        "source_area_px": 62
+      }
+    },
+    {
+      "id": "el_pass2_bbe26d560fde",
+      "kind": "image",
+      "bbox": {
+        "left": 755.58,
+        "top": 663.68,
+        "width": 7.04,
+        "height": 14.08
+      },
+      "z": -262,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_bbe26d560fde.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1180,
+          "top": 1037,
+          "width": 11,
+          "height": 22
+        },
+        "source_area_px": 64
+      }
+    },
+    {
+      "id": "el_pass2_28b1ecd615f1",
+      "kind": "image",
+      "bbox": {
+        "left": 1030.28,
+        "top": 672.0,
+        "width": 8.32,
+        "height": 7.68
+      },
+      "z": -261,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_28b1ecd615f1.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1609,
+          "top": 1050,
+          "width": 13,
+          "height": 12
+        },
+        "source_area_px": 65
+      }
+    },
+    {
+      "id": "el_pass2_0d3a996957c7",
+      "kind": "image",
+      "bbox": {
+        "left": 536.59,
+        "top": 664.32,
+        "width": 7.68,
+        "height": 13.44
+      },
+      "z": -260,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0d3a996957c7.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.005
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 838,
+          "top": 1038,
+          "width": 12,
+          "height": 21
+        },
+        "source_area_px": 66
+      }
+    },
+    {
+      "id": "el_pass2_ad46e1db427f",
+      "kind": "image",
+      "bbox": {
+        "left": 683.22,
+        "top": 207.36,
+        "width": 12.81,
+        "height": 3.2
+      },
+      "z": -259,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_ad46e1db427f.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.006
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1067,
+          "top": 324,
+          "width": 20,
+          "height": 5
+        },
+        "source_area_px": 72
+      }
+    },
+    {
+      "id": "el_pass2_b58b1c519069",
+      "kind": "image",
+      "bbox": {
+        "left": 180.57,
+        "top": 506.88,
+        "width": 12.17,
+        "height": 12.8
+      },
+      "z": -258,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_b58b1c519069.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.006
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 282,
+          "top": 792,
+          "width": 19,
+          "height": 20
+        },
+        "source_area_px": 75
+      }
+    },
+    {
+      "id": "el_pass2_68a1214186de",
+      "kind": "image",
+      "bbox": {
+        "left": 356.02,
+        "top": 325.12,
+        "width": 17.29,
+        "height": 2.56
+      },
+      "z": -257,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_68a1214186de.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.009
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 556,
+          "top": 508,
+          "width": 27,
+          "height": 4
+        },
+        "source_area_px": 104
+      }
+    },
+    {
+      "id": "el_pass2_18905bb20240",
+      "kind": "image",
+      "bbox": {
+        "left": 637.76,
+        "top": 353.28,
+        "width": 8.32,
+        "height": 11.52
+      },
+      "z": -256,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_18905bb20240.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.01
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 996,
+          "top": 552,
+          "width": 13,
+          "height": 18
+        },
+        "source_area_px": 121
+      }
+    },
+    {
+      "id": "el_pass2_5e340a962df3",
+      "kind": "image",
+      "bbox": {
+        "left": 1205.08,
+        "top": 28.8,
+        "width": 8.32,
+        "height": 8.32
+      },
+      "z": -255,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_5e340a962df3.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.011
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1882,
+          "top": 45,
+          "width": 13,
+          "height": 13
+        },
+        "source_area_px": 137
+      }
+    },
+    {
+      "id": "el_pass2_adac19267448",
+      "kind": "image",
+      "bbox": {
+        "left": 299.67,
+        "top": 567.68,
+        "width": 1.92,
+        "height": 51.2
+      },
+      "z": -254,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_adac19267448.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.013
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 468,
+          "top": 887,
+          "width": 3,
+          "height": 80
+        },
+        "source_area_px": 160
+      }
+    },
+    {
+      "id": "el_pass2_7d601580363e",
+      "kind": "image",
+      "bbox": {
+        "left": 475.12,
+        "top": 465.92,
+        "width": 16.01,
+        "height": 13.44
+      },
+      "z": -253,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_7d601580363e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.014
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 742,
+          "top": 728,
+          "width": 25,
+          "height": 21
+        },
+        "source_area_px": 163
+      }
+    },
+    {
+      "id": "el_pass2_e2c70dd058f1",
+      "kind": "image",
+      "bbox": {
+        "left": 872.12,
+        "top": 325.12,
+        "width": 28.81,
+        "height": 2.56
+      },
+      "z": -252,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_e2c70dd058f1.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.014
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1362,
+          "top": 508,
+          "width": 45,
+          "height": 4
+        },
+        "source_area_px": 169
+      }
+    },
+    {
+      "id": "el_pass2_1baae3aec5df",
+      "kind": "image",
+      "bbox": {
+        "left": 637.12,
+        "top": 366.08,
+        "width": 8.96,
+        "height": 19.2
+      },
+      "z": -251,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_1baae3aec5df.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.015
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 995,
+          "top": 572,
+          "width": 14,
+          "height": 30
+        },
+        "source_area_px": 181
+      }
+    },
+    {
+      "id": "el_pass2_560a98b10722",
+      "kind": "image",
+      "bbox": {
+        "left": 434.14,
+        "top": 452.48,
+        "width": 17.93,
+        "height": 9.6
+      },
+      "z": -250,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_560a98b10722.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.016
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 678,
+          "top": 707,
+          "width": 28,
+          "height": 15
+        },
+        "source_area_px": 187
+      }
+    },
+    {
+      "id": "el_pass2_346ba1e0d738",
+      "kind": "image",
+      "bbox": {
+        "left": 831.78,
+        "top": 452.48,
+        "width": 17.93,
+        "height": 9.6
+      },
+      "z": -249,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_346ba1e0d738.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.017
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 1299,
+          "top": 707,
+          "width": 28,
+          "height": 15
+        },
+        "source_area_px": 200
+      }
+    },
+    {
+      "id": "el_pass2_9c9b6a6d7db2",
+      "kind": "image",
+      "bbox": {
+        "left": 617.91,
+        "top": 349.44,
+        "width": 49.3,
+        "height": 1.92
+      },
+      "z": -248,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_9c9b6a6d7db2.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.018
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 965,
+          "top": 546,
+          "width": 77,
+          "height": 3
+        },
+        "source_area_px": 217
+      }
+    },
+    {
+      "id": "el_pass2_c4bdc3854a8f",
+      "kind": "image",
+      "bbox": {
+        "left": 797.2,
+        "top": 670.08,
+        "width": 19.85,
+        "height": 7.68
+      },
+      "z": -247,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_c4bdc3854a8f.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.02
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1245,
+          "top": 1047,
+          "width": 31,
+          "height": 12
+        },
+        "source_area_px": 240
+      }
+    },
+    {
+      "id": "el_pass2_fdcccf75ecd1",
+      "kind": "image",
+      "bbox": {
+        "left": 338.73,
+        "top": 319.36,
+        "width": 16.65,
+        "height": 12.8
+      },
+      "z": -246,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_fdcccf75ecd1.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.02
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 529,
+          "top": 499,
+          "width": 26,
+          "height": 20
+        },
+        "source_area_px": 244
+      }
+    },
+    {
+      "id": "el_pass2_fe8602fe9b10",
+      "kind": "image",
+      "bbox": {
+        "left": 0.0,
+        "top": 92.16,
+        "width": 56.35,
+        "height": 1.92
+      },
+      "z": -245,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_fe8602fe9b10.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.021
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 0,
+          "top": 144,
+          "width": 88,
+          "height": 3
+        },
+        "source_area_px": 252
+      }
+    },
+    {
+      "id": "el_pass2_e3c7c5ec6674",
+      "kind": "image",
+      "bbox": {
+        "left": 637.76,
+        "top": 508.16,
+        "width": 8.32,
+        "height": 29.44
+      },
+      "z": -244,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_e3c7c5ec6674.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.023
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 996,
+          "top": 794,
+          "width": 13,
+          "height": 46
+        },
+        "source_area_px": 275
+      }
+    },
+    {
+      "id": "el_pass2_e91fba684ff7",
+      "kind": "image",
+      "bbox": {
+        "left": 796.56,
+        "top": 661.76,
+        "width": 21.77,
+        "height": 9.6
+      },
+      "z": -243,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_e91fba684ff7.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.024
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1244,
+          "top": 1034,
+          "width": 34,
+          "height": 15
+        },
+        "source_area_px": 285
+      }
+    },
+    {
+      "id": "el_pass2_3d0bf506c029",
+      "kind": "image",
+      "bbox": {
+        "left": 835.62,
+        "top": 320.0,
+        "width": 35.86,
+        "height": 12.16
+      },
+      "z": -242,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_3d0bf506c029.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.028
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1305,
+          "top": 500,
+          "width": 56,
+          "height": 19
+        },
+        "source_area_px": 338
+      }
+    },
+    {
+      "id": "el_pass2_6a8722e4328e",
+      "kind": "image",
+      "bbox": {
+        "left": 833.7,
+        "top": 256.64,
+        "width": 25.61,
+        "height": 6.4
+      },
+      "z": -241,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_6a8722e4328e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.03
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1302,
+          "top": 401,
+          "width": 40,
+          "height": 10
+        },
+        "source_area_px": 355
+      }
+    },
+    {
+      "id": "el_pass2_330899bf55d4",
+      "kind": "image",
+      "bbox": {
+        "left": 126.14,
+        "top": 661.76,
+        "width": 16.01,
+        "height": 19.2
+      },
+      "z": -240,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_330899bf55d4.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.032
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 197,
+          "top": 1034,
+          "width": 25,
+          "height": 30
+        },
+        "source_area_px": 387
+      }
+    },
+    {
+      "id": "el_pass2_aa7572eeb3de",
+      "kind": "image",
+      "bbox": {
+        "left": 338.09,
+        "top": 256.64,
+        "width": 29.45,
+        "height": 7.04
+      },
+      "z": -239,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_aa7572eeb3de.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.037
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 528,
+          "top": 401,
+          "width": 46,
+          "height": 11
+        },
+        "source_area_px": 439
+      }
+    },
+    {
+      "id": "el_pass2_29b9e6f9b30f",
+      "kind": "image",
+      "bbox": {
+        "left": 589.73,
+        "top": 463.36,
+        "width": 19.21,
+        "height": 24.96
+      },
+      "z": -238,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_29b9e6f9b30f.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.051
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 921,
+          "top": 724,
+          "width": 30,
+          "height": 39
+        },
+        "source_area_px": 610
+      }
+    },
+    {
+      "id": "el_pass2_4e4a03629eb3",
+      "kind": "image",
+      "bbox": {
+        "left": 1199.96,
+        "top": 66.56,
+        "width": 33.94,
+        "height": 16.0
+      },
+      "z": -237,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_4e4a03629eb3.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.053
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1874,
+          "top": 104,
+          "width": 53,
+          "height": 25
+        },
+        "source_area_px": 637
+      }
+    },
+    {
+      "id": "el_pass2_a0272a22eca2",
+      "kind": "image",
+      "bbox": {
+        "left": 911.82,
+        "top": 251.52,
+        "width": 34.58,
+        "height": 17.28
+      },
+      "z": -236,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_a0272a22eca2.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.055
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1424,
+          "top": 393,
+          "width": 54,
+          "height": 27
+        },
+        "source_area_px": 665
+      }
+    },
+    {
+      "id": "el_pass2_381bb6b4ed8a",
+      "kind": "image",
+      "bbox": {
+        "left": 413.01,
+        "top": 250.88,
+        "width": 35.86,
+        "height": 17.92
+      },
+      "z": -235,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_381bb6b4ed8a.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.057
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 645,
+          "top": 392,
+          "width": 56,
+          "height": 28
+        },
+        "source_area_px": 686
+      }
+    },
+    {
+      "id": "el_pass2_a9a3615c30aa",
+      "kind": "image",
+      "bbox": {
+        "left": 318.88,
+        "top": 594.56,
+        "width": 21.13,
+        "height": 18.56
+      },
+      "z": -234,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_a9a3615c30aa.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.062
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 498,
+          "top": 929,
+          "width": 33,
+          "height": 29
+        },
+        "source_area_px": 741
+      }
+    },
+    {
+      "id": "el_pass2_621ac50b63ae",
+      "kind": "image",
+      "bbox": {
+        "left": 751.1,
+        "top": 281.6,
+        "width": 18.57,
+        "height": 23.68
+      },
+      "z": -233,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_621ac50b63ae.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.063
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1173,
+          "top": 440,
+          "width": 29,
+          "height": 37
+        },
+        "source_area_px": 761
+      }
+    },
+    {
+      "id": "el_pass2_0b7dfa375097",
+      "kind": "image",
+      "bbox": {
+        "left": 474.48,
+        "top": 578.56,
+        "width": 21.77,
+        "height": 21.76
+      },
+      "z": -232,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0b7dfa375097.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.066
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 741,
+          "top": 904,
+          "width": 34,
+          "height": 34
+        },
+        "source_area_px": 786
+      }
+    },
+    {
+      "id": "el_pass2_fefce894e8ef",
+      "kind": "image",
+      "bbox": {
+        "left": 841.38,
+        "top": 577.92,
+        "width": 20.49,
+        "height": 22.4
+      },
+      "z": -231,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_fefce894e8ef.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.068
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1314,
+          "top": 903,
+          "width": 32,
+          "height": 35
+        },
+        "source_area_px": 813
+      }
+    },
+    {
+      "id": "el_pass2_6de215e6770e",
+      "kind": "image",
+      "bbox": {
+        "left": 988.65,
+        "top": 446.08,
+        "width": 21.77,
+        "height": 23.04
+      },
+      "z": -230,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_6de215e6770e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.068
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1544,
+          "top": 697,
+          "width": 34,
+          "height": 36
+        },
+        "source_area_px": 816
+      }
+    },
+    {
+      "id": "el_pass2_6e7798c6c8f3",
+      "kind": "image",
+      "bbox": {
+        "left": 60.19,
+        "top": 446.08,
+        "width": 23.05,
+        "height": 23.04
+      },
+      "z": -229,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_6e7798c6c8f3.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.069
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 94,
+          "top": 697,
+          "width": 36,
+          "height": 36
+        },
+        "source_area_px": 827
+      }
+    },
+    {
+      "id": "el_pass2_0f9e282e5836",
+      "kind": "image",
+      "bbox": {
+        "left": 662.09,
+        "top": 576.0,
+        "width": 21.13,
+        "height": 22.4
+      },
+      "z": -228,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0f9e282e5836.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.072
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1034,
+          "top": 900,
+          "width": 33,
+          "height": 35
+        },
+        "source_area_px": 862
+      }
+    },
+    {
+      "id": "el_pass2_fa9c549c15d4",
+      "kind": "image",
+      "bbox": {
+        "left": 59.55,
+        "top": 294.4,
+        "width": 23.69,
+        "height": 23.04
+      },
+      "z": -227,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_fa9c549c15d4.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.073
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 93,
+          "top": 460,
+          "width": 37,
+          "height": 36
+        },
+        "source_area_px": 875
+      }
+    },
+    {
+      "id": "el_pass2_7f93094d0ec3",
+      "kind": "image",
+      "bbox": {
+        "left": 988.01,
+        "top": 294.4,
+        "width": 23.05,
+        "height": 23.04
+      },
+      "z": -226,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_7f93094d0ec3.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.073
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1543,
+          "top": 460,
+          "width": 36,
+          "height": 36
+        },
+        "source_area_px": 875
+      }
+    },
+    {
+      "id": "el_pass2_d57e7375d3e4",
+      "kind": "image",
+      "bbox": {
+        "left": 630.72,
+        "top": 284.16,
+        "width": 23.05,
+        "height": 21.12
+      },
+      "z": -225,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_d57e7375d3e4.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.074
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 985,
+          "top": 444,
+          "width": 36,
+          "height": 33
+        },
+        "source_area_px": 883
+      }
+    },
+    {
+      "id": "el_pass2_119d4f353e77",
+      "kind": "image",
+      "bbox": {
+        "left": 988.01,
+        "top": 247.04,
+        "width": 23.05,
+        "height": 20.48
+      },
+      "z": -224,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_119d4f353e77.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.074
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1543,
+          "top": 386,
+          "width": 36,
+          "height": 32
+        },
+        "source_area_px": 885
+      }
+    },
+    {
+      "id": "el_pass2_26d779c737b7",
+      "kind": "image",
+      "bbox": {
+        "left": 60.19,
+        "top": 247.04,
+        "width": 23.05,
+        "height": 20.48
+      },
+      "z": -223,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_26d779c737b7.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.074
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 94,
+          "top": 386,
+          "width": 36,
+          "height": 32
+        },
+        "source_area_px": 886
+      }
+    },
+    {
+      "id": "el_pass2_075b89eb32d4",
+      "kind": "image",
+      "bbox": {
+        "left": 714.6,
+        "top": 464.64,
+        "width": 19.21,
+        "height": 23.04
+      },
+      "z": -222,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_075b89eb32d4.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.074
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 1116,
+          "top": 726,
+          "width": 30,
+          "height": 36
+        },
+        "source_area_px": 891
+      }
+    },
+    {
+      "id": "el_pass2_ec7e9f23fcaf",
+      "kind": "image",
+      "bbox": {
+        "left": 988.65,
+        "top": 356.48,
+        "width": 21.13,
+        "height": 23.68
+      },
+      "z": -221,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_ec7e9f23fcaf.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.076
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1544,
+          "top": 557,
+          "width": 33,
+          "height": 37
+        },
+        "source_area_px": 916
+      }
+    },
+    {
+      "id": "el_pass2_fc26773f0108",
+      "kind": "image",
+      "bbox": {
+        "left": 61.47,
+        "top": 356.48,
+        "width": 21.13,
+        "height": 23.68
+      },
+      "z": -220,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_fc26773f0108.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.078
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 96,
+          "top": 557,
+          "width": 33,
+          "height": 37
+        },
+        "source_area_px": 937
+      }
+    },
+    {
+      "id": "el_pass2_66da3fe0c7dc",
+      "kind": "image",
+      "bbox": {
+        "left": 889.4,
+        "top": 92.16,
+        "width": 242.68,
+        "height": 1.92
+      },
+      "z": -219,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_66da3fe0c7dc.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.084
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1389,
+          "top": 144,
+          "width": 379,
+          "height": 3
+        },
+        "source_area_px": 1009
+      }
+    },
+    {
+      "id": "el_pass2_40cf14712691",
+      "kind": "image",
+      "bbox": {
+        "left": 211.95,
+        "top": 90.88,
+        "width": 168.4,
+        "height": 3.84
+      },
+      "z": -218,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_40cf14712691.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.085
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 331,
+          "top": 142,
+          "width": 263,
+          "height": 6
+        },
+        "source_area_px": 1016
+      }
+    },
+    {
+      "id": "el_pass2_0fd2ced97e27",
+      "kind": "image",
+      "bbox": {
+        "left": 474.48,
+        "top": 464.64,
+        "width": 19.85,
+        "height": 23.68
+      },
+      "z": -217,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_0fd2ced97e27.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.086
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 741,
+          "top": 726,
+          "width": 31,
+          "height": 37
+        },
+        "source_area_px": 1031
+      }
+    },
+    {
+      "id": "el_pass2_a6d846f239cb",
+      "kind": "image",
+      "bbox": {
+        "left": 512.26,
+        "top": 282.88,
+        "width": 23.69,
+        "height": 22.4
+      },
+      "z": -216,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_a6d846f239cb.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.088
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 800,
+          "top": 442,
+          "width": 37,
+          "height": 35
+        },
+        "source_area_px": 1060
+      }
+    },
+    {
+      "id": "el_pass2_942eb61ea8d1",
+      "kind": "image",
+      "bbox": {
+        "left": 382.91,
+        "top": 113.28,
+        "width": 41.62,
+        "height": 20.48
+      },
+      "z": -215,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_942eb61ea8d1.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.096
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 598,
+          "top": 177,
+          "width": 65,
+          "height": 32
+        },
+        "source_area_px": 1157
+      }
+    },
+    {
+      "id": "el_pass2_489c8eb25de0",
+      "kind": "image",
+      "bbox": {
+        "left": 1181.39,
+        "top": 56.96,
+        "width": 53.79,
+        "height": 23.68
+      },
+      "z": -214,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_489c8eb25de0.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.104
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1845,
+          "top": 89,
+          "width": 84,
+          "height": 37
+        },
+        "source_area_px": 1254
+      }
+    },
+    {
+      "id": "el_pass2_bcfe98dea8c5",
+      "kind": "image",
+      "bbox": {
+        "left": 1155.14,
+        "top": 19.2,
+        "width": 40.34,
+        "height": 48.0
+      },
+      "z": -213,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_bcfe98dea8c5.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.143
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 1804,
+          "top": 30,
+          "width": 63,
+          "height": 75
+        },
+        "source_area_px": 1716
+      }
+    },
+    {
+      "id": "el_pass2_04714fb11626",
+      "kind": "image",
+      "bbox": {
+        "left": 382.27,
+        "top": 129.92,
+        "width": 42.9,
+        "height": 27.52
+      },
+      "z": -212,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_04714fb11626.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.146
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 597,
+          "top": 203,
+          "width": 67,
+          "height": 43
+        },
+        "source_area_px": 1747
+      }
+    },
+    {
+      "id": "el_pass2_6f2a78b0359e",
+      "kind": "image",
+      "bbox": {
+        "left": 629.43,
+        "top": 184.96,
+        "width": 30.74,
+        "height": 28.16
+      },
+      "z": -211,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_6f2a78b0359e.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.148
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "gold_red_visual",
+        "source_bbox_px": {
+          "left": 983,
+          "top": 289,
+          "width": 48,
+          "height": 44
+        },
+        "source_area_px": 1776
+      }
+    },
+    {
+      "id": "el_pass2_2856fc75de09",
+      "kind": "image",
+      "bbox": {
+        "left": 614.71,
+        "top": 174.08,
+        "width": 55.07,
+        "height": 48.64
+      },
+      "z": -210,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_2856fc75de09.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.226
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 960,
+          "top": 272,
+          "width": 86,
+          "height": 76
+        },
+        "source_area_px": 2712
+      }
+    },
+    {
+      "id": "el_pass2_b9e021e84544",
+      "kind": "image",
+      "bbox": {
+        "left": 466.15,
+        "top": 378.24,
+        "width": 352.18,
+        "height": 40.32
+      },
+      "z": -209,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_b9e021e84544.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 0.303
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "green_visual",
+        "source_bbox_px": {
+          "left": 728,
+          "top": 591,
+          "width": 550,
+          "height": 63
+        },
+        "source_area_px": 3635
+      }
+    },
+    {
+      "id": "el_pass2_7627528e86c3",
+      "kind": "image",
+      "bbox": {
+        "left": 980.33,
+        "top": 160.64,
+        "width": 248.44,
+        "height": 48.64
+      },
+      "z": -208,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_7627528e86c3.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 1.0
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 1531,
+          "top": 251,
+          "width": 388,
+          "height": 76
+        },
+        "source_area_px": 19153
+      }
+    },
+    {
+      "id": "el_pass2_9e0ca90325c8",
+      "kind": "image",
+      "bbox": {
+        "left": 301.59,
+        "top": 525.44,
+        "width": 696.03,
+        "height": 107.52
+      },
+      "z": -207,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_9e0ca90325c8.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 1.0
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 471,
+          "top": 821,
+          "width": 1087,
+          "height": 168
+        },
+        "source_area_px": 20491
+      }
+    },
+    {
+      "id": "el_pass2_052348a6bbd2",
+      "kind": "image",
+      "bbox": {
+        "left": 39.06,
+        "top": 160.64,
+        "width": 277.26,
+        "height": 235.52
+      },
+      "z": -206,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_052348a6bbd2.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 1.0
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 61,
+          "top": 251,
+          "width": 433,
+          "height": 368
+        },
+        "source_area_px": 20876
+      }
+    },
+    {
+      "id": "el_pass2_c1126f24b93c",
+      "kind": "image",
+      "bbox": {
+        "left": 65.31,
+        "top": 652.16,
+        "width": 1150.66,
+        "height": 61.44
+      },
+      "z": -205,
+      "editable_score": 0.38,
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_pass2_c1126f24b93c.png",
+      "fit": "contain",
+      "confidence": {
+        "second_pass_visual": 1.0
+      },
+      "metadata": {
+        "detector": "iterative_residual_components",
+        "pass": 2,
+        "class": "blue_visual",
+        "source_bbox_px": {
+          "left": 102,
+          "top": 1019,
+          "width": 1797,
+          "height": 96
+        },
+        "source_area_px": 149419
+      }
+    },
+    {
+      "id": "el_b28a023f4574",
+      "bbox": {
+        "left": 455.27,
+        "top": 196.48,
+        "width": 167.76,
+        "height": 163.2
+      },
+      "z": -100,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.219
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 711,
+          "top": 307,
+          "width": 262,
+          "height": 255
+        },
+        "source_area_px": 9833
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_b28a023f4574.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_710900b3a239",
+      "bbox": {
+        "left": 660.17,
+        "top": 197.12,
+        "width": 167.76,
+        "height": 162.56
+      },
+      "z": -99,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.211
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 1031,
+          "top": 308,
+          "width": 262,
+          "height": 254
+        },
+        "source_area_px": 9480
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_710900b3a239.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_635a966d0a80",
+      "bbox": {
+        "left": 309.27,
+        "top": 208.64,
+        "width": 21.77,
+        "height": 177.92
+      },
+      "z": -98,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.095
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 483,
+          "top": 326,
+          "width": 34,
+          "height": 278
+        },
+        "source_area_px": 4277
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_635a966d0a80.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_11f548c07817",
+      "bbox": {
+        "left": 851.63,
+        "top": 253.44,
+        "width": 67.87,
+        "height": 18.56
+      },
+      "z": -97,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.053
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 1330,
+          "top": 396,
+          "width": 106,
+          "height": 29
+        },
+        "source_area_px": 2383
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_11f548c07817.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_b8a3a7b1badf",
+      "bbox": {
+        "left": 359.22,
+        "top": 253.44,
+        "width": 62.11,
+        "height": 18.56
+      },
+      "z": -96,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.05
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 561,
+          "top": 396,
+          "width": 97,
+          "height": 29
+        },
+        "source_area_px": 2238
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_b8a3a7b1badf.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_d7370ec136f8",
+      "bbox": {
+        "left": 450.79,
+        "top": 552.96,
+        "width": 60.83,
+        "height": 16.0
+      },
+      "z": -95,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.031
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 704,
+          "top": 864,
+          "width": 95,
+          "height": 25
+        },
+        "source_area_px": 1395
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_d7370ec136f8.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_6984b5f2ce4d",
+      "bbox": {
+        "left": 959.84,
+        "top": 281.6,
+        "width": 12.81,
+        "height": 64.0
+      },
+      "z": -94,
+      "editable_score": 0.42,
+      "confidence": {
+        "visual_component": 0.029
+      },
+      "metadata": {
+        "detector": "opencv_residual_components",
+        "source_bbox_px": {
+          "left": 1499,
+          "top": 440,
+          "width": 20,
+          "height": 100
+        },
+        "source_area_px": 1320
+      },
+      "kind": "image",
+      "render_strategy": "image",
+      "image_path": "C:\\Users\\tangvx\\Documents\\AI ppt\\outputs\\two-pass-original-6b94462e\\detect\\assets\\el_6984b5f2ce4d.png",
+      "fit": "contain"
+    },
+    {
+      "id": "el_6a2c894a2a9f",
+      "kind": "text",
+      "bbox": {
+        "left": 44.18,
+        "top": 13.44,
+        "width": 616.63,
+        "height": 37.76
+      },
+      "z": 0,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "一个技术底座，连接产业、教学与科研",
+      "font_size": 37.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#032B78",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_26f1d76fe09f",
+      "kind": "text",
+      "bbox": {
+        "left": 45.46,
+        "top": 62.08,
+        "width": 469.35,
+        "height": 19.84
+      },
+      "z": 1,
+      "editable_score": 0.989,
+      "render_strategy": "native",
+      "text": "以大赛与联合实验室为纽带，构建产学研协同创新生态",
+      "font_size": 19.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.989
+      },
+      "text_color": "#2F3B5E",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_6bc2035ba337",
+      "kind": "text",
+      "bbox": {
+        "left": 1153.22,
+        "top": 72.96,
+        "width": 32.66,
+        "height": 10.88
+      },
+      "z": 2,
+      "editable_score": 0.852,
+      "render_strategy": "native",
+      "text": "东方仿旗",
+      "font_size": 10.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.852
+      },
+      "text_color": "#656466",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_bb4654a0b825",
+      "kind": "text",
+      "bbox": {
+        "left": 450.15,
+        "top": 113.28,
+        "width": 412.37,
+        "height": 21.76
+      },
+      "z": 3,
+      "editable_score": 0.976,
+      "render_strategy": "native",
+      "text": "统一技术底座：SimforAl虚拟化工现场平台",
+      "font_size": 21.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.976
+      },
+      "text_color": "#053390",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_f00611a273d7",
+      "kind": "text",
+      "bbox": {
+        "left": 448.86,
+        "top": 140.8,
+        "width": 427.09,
+        "height": 17.28
+      },
+      "z": 4,
+      "editable_score": 0.926,
+      "render_strategy": "native",
+      "text": "高保真与联仿真丨虚拟实验丨数据生成丨AI训练与验证丨方案评估",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.926
+      },
+      "text_color": "#4A66A8",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_a54b6c8e67a5",
+      "kind": "text",
+      "bbox": {
+        "left": 65.31,
+        "top": 176.0,
+        "width": 24.97,
+        "height": 20.48
+      },
+      "z": 5,
+      "editable_score": 0.756,
+      "render_strategy": "native",
+      "text": "B",
+      "font_size": 20.5,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.756
+      },
+      "text_color": "#FEFEFE",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_babd611f1787",
+      "kind": "text",
+      "bbox": {
+        "left": 110.14,
+        "top": 177.28,
+        "width": 67.87,
+        "height": 17.28
+      },
+      "z": 6,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "01产业端",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#EFF3F8",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_dff3efd2cb1e",
+      "kind": "text",
+      "bbox": {
+        "left": 1037.32,
+        "top": 177.28,
+        "width": 67.87,
+        "height": 17.92
+      },
+      "z": 7,
+      "editable_score": 0.985,
+      "render_strategy": "native",
+      "text": "02教学端",
+      "font_size": 17.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.985
+      },
+      "text_color": "#F4F6FA",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_1be859dc5f90",
+      "kind": "text",
+      "bbox": {
+        "left": 94.77,
+        "top": 211.2,
+        "width": 165.2,
+        "height": 15.36
+      },
+      "z": 8,
+      "editable_score": 0.978,
+      "render_strategy": "native",
+      "text": "真实需求牵引，驱动技术落地",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.978
+      },
+      "text_color": "#153993",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_a092ac452234",
+      "kind": "text",
+      "bbox": {
+        "left": 1022.59,
+        "top": 211.2,
+        "width": 163.92,
+        "height": 15.36
+      },
+      "z": 9,
+      "editable_score": 0.996,
+      "render_strategy": "native",
+      "text": "工程实践育人，培养复合人才",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.996
+      },
+      "text_color": "#183C94",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_8745305f98dc",
+      "kind": "text",
+      "bbox": {
+        "left": 356.66,
+        "top": 234.24,
+        "width": 71.72,
+        "height": 14.72
+      },
+      "z": 10,
+      "editable_score": 0.973,
+      "render_strategy": "native",
+      "text": "提出真实问题",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.973
+      },
+      "text_color": "#506EAD",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_d3d8dffa3356",
+      "kind": "text",
+      "bbox": {
+        "left": 593.58,
+        "top": 230.4,
+        "width": 97.33,
+        "height": 15.36
+      },
+      "z": 11,
+      "editable_score": 0.994,
+      "render_strategy": "native",
+      "text": "大赛生态连接器",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.994
+      },
+      "text_color": "#0C3595",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_9cd276028ade",
+      "kind": "text",
+      "bbox": {
+        "left": 92.21,
+        "top": 236.8,
+        "width": 28.81,
+        "height": 17.92
+      },
+      "z": 12,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "客户",
+      "font_size": 17.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#304C98",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_dca461dff555",
+      "kind": "text",
+      "bbox": {
+        "left": 846.5,
+        "top": 234.24,
+        "width": 83.24,
+        "height": 14.72
+      },
+      "z": 13,
+      "editable_score": 0.994,
+      "render_strategy": "native",
+      "text": "提供案例与场景",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.994
+      },
+      "text_color": "#4D6AAD",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_9fae148b33bc",
+      "kind": "text",
+      "bbox": {
+        "left": 1020.03,
+        "top": 236.8,
+        "width": 28.81,
+        "height": 18.56
+      },
+      "z": 14,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "客户",
+      "font_size": 18.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#304B99",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_5f5adc0cb6c6",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 258.56,
+        "width": 151.76,
+        "height": 12.8
+      },
+      "z": 15,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "化工、炼化、能等生产企业",
+      "font_size": 12.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#504F51",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_dea732cbf193",
+      "kind": "text",
+      "bbox": {
+        "left": 556.44,
+        "top": 252.8,
+        "width": 172.89,
+        "height": 14.72
+      },
+      "z": 16,
+      "editable_score": 0.969,
+      "render_strategy": "native",
+      "text": "面向产业真实同题的化工+AI大案",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.969
+      },
+      "text_color": "#536DA9",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_56d1dc078612",
+      "kind": "text",
+      "bbox": {
+        "left": 1021.31,
+        "top": 257.28,
+        "width": 84.52,
+        "height": 15.36
+      },
+      "z": 17,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "高校、职业院校",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#5A595A",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_e1f345e9a27a",
+      "kind": "text",
+      "bbox": {
+        "left": 92.85,
+        "top": 286.08,
+        "width": 29.45,
+        "height": 18.56
+      },
+      "z": 18,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "需求",
+      "font_size": 18.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#345098",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_0b363c5ba474",
+      "kind": "text",
+      "bbox": {
+        "left": 1020.03,
+        "top": 286.08,
+        "width": 30.1,
+        "height": 18.56
+      },
+      "z": 19,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "需求",
+      "font_size": 18.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#324D90",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_d43fb27253b4",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 305.92,
+        "width": 141.51,
+        "height": 14.72
+      },
+      "z": 20,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "·生产过程优化、故障诊断",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#575657",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_d62757d61e4e",
+      "kind": "text",
+      "bbox": {
+        "left": 500.09,
+        "top": 309.12,
+        "width": 45.46,
+        "height": 15.36
+      },
+      "z": 21,
+      "editable_score": 0.996,
+      "render_strategy": "native",
+      "text": "产业出题",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.996
+      },
+      "text_color": "#3456A4",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_62d5fdc29fd7",
+      "kind": "text",
+      "bbox": {
+        "left": 619.83,
+        "top": 310.4,
+        "width": 44.18,
+        "height": 13.44
+      },
+      "z": 22,
+      "editable_score": 0.965,
+      "render_strategy": "native",
+      "text": "创新解题",
+      "font_size": 13.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.965
+      },
+      "text_color": "#2950A0",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_57cf11cfefa8",
+      "kind": "text",
+      "bbox": {
+        "left": 721.64,
+        "top": 309.76,
+        "width": 76.2,
+        "height": 14.72
+      },
+      "z": 23,
+      "editable_score": 0.949,
+      "render_strategy": "native",
+      "text": "成果验证与选拨",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.949
+      },
+      "text_color": "#2C4F9D",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_b87e13e2781d",
+      "kind": "text",
+      "bbox": {
+        "left": 1020.67,
+        "top": 305.28,
+        "width": 163.92,
+        "height": 16.0
+      },
+      "z": 24,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "·缺乏真实工业场景与实践平台",
+      "font_size": 16.0,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#5A5859",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_64fa1d0c13fa",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 323.84,
+        "width": 129.98,
+        "height": 14.72
+      },
+      "z": 25,
+      "editable_score": 0.991,
+      "render_strategy": "native",
+      "text": "·参数预测、能效提升等",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.991
+      },
+      "text_color": "#565456",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_0504e5528a5b",
+      "kind": "text",
+      "bbox": {
+        "left": 477.04,
+        "top": 323.84,
+        "width": 92.21,
+        "height": 16.0
+      },
+      "z": 26,
+      "editable_score": 0.932,
+      "render_strategy": "native",
+      "text": "真实问题转化为察题",
+      "font_size": 16.0,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.932
+      },
+      "text_color": "#727274",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_1a5acb7e6b88",
+      "kind": "text",
+      "bbox": {
+        "left": 587.81,
+        "top": 325.76,
+        "width": 107.57,
+        "height": 12.8
+      },
+      "z": 27,
+      "editable_score": 0.899,
+      "render_strategy": "native",
+      "text": "高校生与科研困队参",
+      "font_size": 12.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.899
+      },
+      "text_color": "#6D6D70",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_876f57d07d86",
+      "kind": "text",
+      "bbox": {
+        "left": 713.96,
+        "top": 323.84,
+        "width": 91.57,
+        "height": 16.0
+      },
+      "z": 28,
+      "editable_score": 0.893,
+      "render_strategy": "native",
+      "text": "优要方案验证与选",
+      "font_size": 16.0,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.893
+      },
+      "text_color": "#6F7174",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_7f2a4143b042",
+      "kind": "text",
+      "bbox": {
+        "left": 1021.95,
+        "top": 323.84,
+        "width": 156.24,
+        "height": 14.72
+      },
+      "z": 29,
+      "editable_score": 0.971,
+      "render_strategy": "native",
+      "text": "·培养“化工+AI”复合型人才",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.971
+      },
+      "text_color": "#5A595A",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_cfd6c9be5874",
+      "kind": "text",
+      "bbox": {
+        "left": 356.02,
+        "top": 336.64,
+        "width": 73.0,
+        "height": 14.72
+      },
+      "z": 30,
+      "editable_score": 0.991,
+      "render_strategy": "native",
+      "text": "解决方案落地",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.991
+      },
+      "text_color": "#4E67A4",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_db1a38340fde",
+      "kind": "text",
+      "bbox": {
+        "left": 846.5,
+        "top": 336.0,
+        "width": 83.88,
+        "height": 15.36
+      },
+      "z": 31,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "产出人才与方案",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#5873AF",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_4b80b7cbd2e1",
+      "kind": "text",
+      "bbox": {
+        "left": 91.57,
+        "top": 351.36,
+        "width": 53.79,
+        "height": 17.92
+      },
+      "z": 32,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "我们提供",
+      "font_size": 17.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#1E3887",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_18e4551039b6",
+      "kind": "text",
+      "bbox": {
+        "left": 355.38,
+        "top": 352.64,
+        "width": 73.64,
+        "height": 17.28
+      },
+      "z": 33,
+      "editable_score": 0.981,
+      "render_strategy": "native",
+      "text": "价值回馈产业",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.981
+      },
+      "text_color": "#546DAB",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_f045deb46dc4",
+      "kind": "text",
+      "bbox": {
+        "left": 863.79,
+        "top": 353.28,
+        "width": 49.94,
+        "height": 16.0
+      },
+      "z": 34,
+      "editable_score": 0.97,
+      "render_strategy": "native",
+      "text": "反哺产业",
+      "font_size": 16.0,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.97
+      },
+      "text_color": "#5B72AC",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_8b2fbc9ab130",
+      "kind": "text",
+      "bbox": {
+        "left": 1020.03,
+        "top": 352.0,
+        "width": 53.79,
+        "height": 17.92
+      },
+      "z": 35,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "我们提供",
+      "font_size": 17.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#223C89",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_c7b56cc4be1a",
+      "kind": "text",
+      "bbox": {
+        "left": 94.77,
+        "top": 372.48,
+        "width": 119.1,
+        "height": 14.72
+      },
+      "z": 36,
+      "editable_score": 0.962,
+      "render_strategy": "native",
+      "text": "·AI智能生产解决方案",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.962
+      },
+      "text_color": "#525052",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_0dfe2319da33",
+      "kind": "text",
+      "bbox": {
+        "left": 1022.59,
+        "top": 372.48,
+        "width": 140.87,
+        "height": 14.72
+      },
+      "z": 37,
+      "editable_score": 0.988,
+      "render_strategy": "native",
+      "text": "·化工AI课程体系与案例库",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.988
+      },
+      "text_color": "#4D4D4E",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_94700c682648",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 390.4,
+        "width": 118.46,
+        "height": 14.72
+      },
+      "z": 38,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "·数字生联合实验室",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#545354",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_8348f658ff58",
+      "kind": "text",
+      "bbox": {
+        "left": 1022.59,
+        "top": 390.4,
+        "width": 103.73,
+        "height": 14.72
+      },
+      "z": 39,
+      "editable_score": 0.992,
+      "render_strategy": "native",
+      "text": "·虚拟实验教学平台",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.992
+      },
+      "text_color": "#545455",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_e70ae4f5ab27",
+      "kind": "text",
+      "bbox": {
+        "left": 548.75,
+        "top": 398.72,
+        "width": 185.05,
+        "height": 16.64
+      },
+      "z": 40,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "联合实验室（产学研协同平台）",
+      "font_size": 16.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#106D5F",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_91cd763b77ff",
+      "kind": "text",
+      "bbox": {
+        "left": 93.49,
+        "top": 407.04,
+        "width": 131.27,
+        "height": 15.36
+      },
+      "z": 41,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "text": "·定制化数据与机型服务",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.95
+      },
+      "text_color": "#505051",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_be4b5601aab7",
+      "kind": "text",
+      "bbox": {
+        "left": 1022.59,
+        "top": 408.96,
+        "width": 127.42,
+        "height": 12.8
+      },
+      "z": 42,
+      "editable_score": 0.985,
+      "render_strategy": "native",
+      "text": "·实践实训与项目制教学",
+      "font_size": 12.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.985
+      },
+      "text_color": "#505050",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_fbd0dacd1eba",
+      "kind": "text",
+      "bbox": {
+        "left": 561.56,
+        "top": 424.32,
+        "width": 162.0,
+        "height": 12.8
+      },
+      "z": 43,
+      "editable_score": 0.897,
+      "render_strategy": "native",
+      "text": "共建资源|协同攻关|成转化",
+      "font_size": 12.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.897
+      },
+      "text_color": "#3D867D",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_4f8bd079288f",
+      "kind": "text",
+      "bbox": {
+        "left": 93.49,
+        "top": 437.12,
+        "width": 27.53,
+        "height": 16.64
+      },
+      "z": 44,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "价值",
+      "font_size": 16.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#28438E",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_abcce6c08abb",
+      "kind": "text",
+      "bbox": {
+        "left": 1020.67,
+        "top": 437.12,
+        "width": 28.17,
+        "height": 16.64
+      },
+      "z": 45,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "价值",
+      "font_size": 16.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#213E89",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_f6dcdeae7df1",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 456.96,
+        "width": 153.04,
+        "height": 14.72
+      },
+      "z": 46,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "提升安全性、稳定性、经济性",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#595959",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_909e61720f8f",
+      "kind": "text",
+      "bbox": {
+        "left": 500.73,
+        "top": 455.68,
+        "width": 64.67,
+        "height": 14.72
+      },
+      "z": 47,
+      "editable_score": 0.928,
+      "render_strategy": "native",
+      "text": "共建技术平台",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.928
+      },
+      "text_color": "#28786B",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_d160374ad170",
+      "kind": "text",
+      "bbox": {
+        "left": 613.43,
+        "top": 456.32,
+        "width": 65.31,
+        "height": 14.72
+      },
+      "z": 48,
+      "editable_score": 0.996,
+      "render_strategy": "native",
+      "text": "联合科研攻关",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.996
+      },
+      "text_color": "#25766C",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_602d7beffabc",
+      "kind": "text",
+      "bbox": {
+        "left": 737.65,
+        "top": 455.68,
+        "width": 64.03,
+        "height": 14.72
+      },
+      "z": 49,
+      "editable_score": 0.927,
+      "render_strategy": "native",
+      "text": "成果转化应用",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.927
+      },
+      "text_color": "#26796F",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_899d209e47e3",
+      "kind": "text",
+      "bbox": {
+        "left": 1021.95,
+        "top": 457.6,
+        "width": 153.04,
+        "height": 12.8
+      },
+      "z": 50,
+      "editable_score": 0.997,
+      "render_strategy": "native",
+      "text": "提升教学质量与学生工程能力",
+      "font_size": 12.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.997
+      },
+      "text_color": "#4E4E4F",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_4787db7e2ccf",
+      "kind": "text",
+      "bbox": {
+        "left": 94.13,
+        "top": 474.88,
+        "width": 129.98,
+        "height": 14.72
+      },
+      "z": 51,
+      "editable_score": 0.983,
+      "render_strategy": "native",
+      "text": "实现降本增效与低碳运营",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.983
+      },
+      "text_color": "#535354",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_ae35fb5b5fcb",
+      "kind": "text",
+      "bbox": {
+        "left": 499.45,
+        "top": 469.76,
+        "width": 43.54,
+        "height": 15.36
+      },
+      "z": 52,
+      "editable_score": 0.62,
+      "render_strategy": "native",
+      "text": "数共擎",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.62
+      },
+      "text_color": "#727776",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_eef85c1e5caf",
+      "kind": "text",
+      "bbox": {
+        "left": 614.07,
+        "top": 471.68,
+        "width": 61.47,
+        "height": 13.44
+      },
+      "z": 53,
+      "editable_score": 0.663,
+      "render_strategy": "native",
+      "text": "润向产业雄题",
+      "font_size": 13.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.663
+      },
+      "text_color": "#797A7B",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_7e894661b1ac",
+      "kind": "text",
+      "bbox": {
+        "left": 737.65,
+        "top": 470.4,
+        "width": 79.4,
+        "height": 14.72
+      },
+      "z": 54,
+      "editable_score": 0.925,
+      "render_strategy": "native",
+      "text": "技术验证与工程化",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.925
+      },
+      "text_color": "#787A7B",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_19c7fc43d00a",
+      "kind": "text",
+      "bbox": {
+        "left": 1021.95,
+        "top": 474.88,
+        "width": 131.27,
+        "height": 14.72
+      },
+      "z": 55,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "加速产教融合与人才输送",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#555555",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_604c7cae45a9",
+      "kind": "text",
+      "bbox": {
+        "left": 500.73,
+        "top": 485.76,
+        "width": 40.98,
+        "height": 13.44
+      },
+      "z": 56,
+      "editable_score": 0.53,
+      "render_strategy": "native",
+      "text": "望共瞳",
+      "font_size": 13.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.53
+      },
+      "text_color": "#767779",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_3820cbbb95e5",
+      "kind": "text",
+      "bbox": {
+        "left": 614.07,
+        "top": 485.76,
+        "width": 60.83,
+        "height": 13.44
+      },
+      "z": 57,
+      "editable_score": 0.896,
+      "render_strategy": "native",
+      "text": "开联合研究",
+      "font_size": 13.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.896
+      },
+      "text_color": "#737576",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_9b9b38bc8da7",
+      "kind": "text",
+      "bbox": {
+        "left": 738.29,
+        "top": 485.76,
+        "width": 59.55,
+        "height": 13.44
+      },
+      "z": 58,
+      "editable_score": 0.992,
+      "render_strategy": "native",
+      "text": "推动产业应用",
+      "font_size": 13.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.992
+      },
+      "text_color": "#767777",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_f028361223f5",
+      "kind": "text",
+      "bbox": {
+        "left": 356.02,
+        "top": 539.52,
+        "width": 67.87,
+        "height": 17.92
+      },
+      "z": 59,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "03科研端",
+      "font_size": 17.9,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#F1F5FB",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_9b17eda55da1",
+      "kind": "text",
+      "bbox": {
+        "left": 601.9,
+        "top": 543.36,
+        "width": 167.76,
+        "height": 14.72
+      },
+      "z": 60,
+      "editable_score": 0.965,
+      "render_strategy": "native",
+      "text": "技术创新驱动，支撑产业升级",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.965
+      },
+      "text_color": "#103391",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_b9bd978aec6f",
+      "kind": "text",
+      "bbox": {
+        "left": 690.91,
+        "top": 569.6,
+        "width": 51.23,
+        "height": 15.36
+      },
+      "z": 61,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "我们提供",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#1B378B",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_a8b9f9628efc",
+      "kind": "text",
+      "bbox": {
+        "left": 345.13,
+        "top": 576.0,
+        "width": 26.89,
+        "height": 16.64
+      },
+      "z": 62,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "客户",
+      "font_size": 16.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#304D94",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_9ce2a8ffc4df",
+      "kind": "text",
+      "bbox": {
+        "left": 501.37,
+        "top": 576.64,
+        "width": 28.17,
+        "height": 17.28
+      },
+      "z": 63,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "需求",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#304D98",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_d03d9e8fe798",
+      "kind": "text",
+      "bbox": {
+        "left": 868.27,
+        "top": 576.64,
+        "width": 28.17,
+        "height": 16.64
+      },
+      "z": 64,
+      "editable_score": 1.0,
+      "render_strategy": "native",
+      "text": "价值",
+      "font_size": 16.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 1.0
+      },
+      "text_color": "#2E4A8F",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_ab48be706feb",
+      "kind": "text",
+      "bbox": {
+        "left": 688.98,
+        "top": 587.52,
+        "width": 100.53,
+        "height": 15.36
+      },
+      "z": 65,
+      "editable_score": 0.988,
+      "render_strategy": "native",
+      "text": "·高质量工业数据集",
+      "font_size": 15.4,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.988
+      },
+      "text_color": "#555556",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_523d6dc9fbd7",
+      "kind": "text",
+      "bbox": {
+        "left": 345.77,
+        "top": 596.48,
+        "width": 76.2,
+        "height": 19.84
+      },
+      "z": 66,
+      "editable_score": 0.886,
+      "render_strategy": "native",
+      "text": "高校科研困队、",
+      "font_size": 19.8,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.886
+      },
+      "text_color": "#666667",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_04b81d1a5a7c",
+      "kind": "text",
+      "bbox": {
+        "left": 500.73,
+        "top": 599.04,
+        "width": 74.28,
+        "height": 14.72
+      },
+      "z": 67,
+      "editable_score": 0.986,
+      "render_strategy": "native",
+      "text": "工业数据乏",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.986
+      },
+      "text_color": "#525253",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_45f81179ce55",
+      "kind": "text",
+      "bbox": {
+        "left": 869.55,
+        "top": 599.04,
+        "width": 106.29,
+        "height": 14.72
+      },
+      "z": 68,
+      "editable_score": 0.99,
+      "render_strategy": "native",
+      "text": "支撑论文、专利产出",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.99
+      },
+      "text_color": "#5A595B",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_5829c98e5d3c",
+      "kind": "text",
+      "bbox": {
+        "left": 689.62,
+        "top": 606.08,
+        "width": 111.42,
+        "height": 14.72
+      },
+      "z": 69,
+      "editable_score": 0.995,
+      "render_strategy": "native",
+      "text": "·虚拟实验与验证环境",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.995
+      },
+      "text_color": "#575658",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_051183d39b41",
+      "kind": "text",
+      "bbox": {
+        "left": 345.13,
+        "top": 616.32,
+        "width": 102.45,
+        "height": 14.72
+      },
+      "z": 70,
+      "editable_score": 0.879,
+      "render_strategy": "native",
+      "text": "研发皖所、研究机构",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.879
+      },
+      "text_color": "#545455",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_e653a0fa0ed8",
+      "kind": "text",
+      "bbox": {
+        "left": 498.17,
+        "top": 616.32,
+        "width": 77.48,
+        "height": 14.72
+      },
+      "z": 71,
+      "editable_score": 0.957,
+      "render_strategy": "native",
+      "text": "·验证环境缺失",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.957
+      },
+      "text_color": "#5A585A",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_aaef67d4c010",
+      "kind": "text",
+      "bbox": {
+        "left": 868.91,
+        "top": 616.32,
+        "width": 106.93,
+        "height": 14.72
+      },
+      "z": 72,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "推动科研成果产业化",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#525253",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_2b04c872f9a5",
+      "kind": "text",
+      "bbox": {
+        "left": 688.98,
+        "top": 623.36,
+        "width": 111.42,
+        "height": 14.72
+      },
+      "z": 73,
+      "editable_score": 0.993,
+      "render_strategy": "native",
+      "text": "·算法验证与对比平台",
+      "font_size": 14.7,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.993
+      },
+      "text_color": "#575759",
+      "font_weight": "bold",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_810c409f5025",
+      "kind": "text",
+      "bbox": {
+        "left": 154.32,
+        "top": 662.4,
+        "width": 137.67,
+        "height": 17.28
+      },
+      "z": 74,
+      "editable_score": 0.999,
+      "render_strategy": "native",
+      "text": "三端协同，价值共创",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.999
+      },
+      "text_color": "#EBC571",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_cb261885f597",
+      "kind": "text",
+      "bbox": {
+        "left": 357.3,
+        "top": 660.48,
+        "width": 153.68,
+        "height": 19.2
+      },
+      "z": 75,
+      "editable_score": 0.95,
+      "render_strategy": "native",
+      "text": "盘产业提供真实问题",
+      "font_size": 19.2,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.95
+      },
+      "text_color": "#E4BF6F",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_60b431d27e78",
+      "kind": "text",
+      "bbox": {
+        "left": 573.73,
+        "top": 659.84,
+        "width": 154.96,
+        "height": 19.2
+      },
+      "z": 76,
+      "editable_score": 0.996,
+      "render_strategy": "native",
+      "text": "科研提供技术创新",
+      "font_size": 19.2,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.996
+      },
+      "text_color": "#DFBB6F",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_e088dfac1c7b",
+      "kind": "text",
+      "bbox": {
+        "left": 825.37,
+        "top": 662.4,
+        "width": 125.5,
+        "height": 17.28
+      },
+      "z": 77,
+      "editable_score": 0.997,
+      "render_strategy": "native",
+      "text": "教学培养实战人才",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.997
+      },
+      "text_color": "#E4C06F",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_1d08e174aa14",
+      "kind": "text",
+      "bbox": {
+        "left": 1045.0,
+        "top": 662.4,
+        "width": 129.34,
+        "height": 17.28
+      },
+      "z": 78,
+      "editable_score": 0.998,
+      "render_strategy": "native",
+      "text": "生态协同持续发展",
+      "font_size": 17.3,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.998
+      },
+      "text_color": "#E9C16F",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    },
+    {
+      "id": "el_0fafeaa0989e",
+      "kind": "text",
+      "bbox": {
+        "left": 293.27,
+        "top": 690.56,
+        "width": 706.27,
+        "height": 18.56
+      },
+      "z": 79,
+      "editable_score": 0.993,
+      "render_strategy": "native",
+      "text": "以虚拟化工现场为底座，通过大赛与联合实验室连接产学研，构建可持续的创新与转化生态",
+      "font_size": 18.6,
+      "align": "left",
+      "valign": "middle",
+      "confidence": {
+        "ocr": 0.993
+      },
+      "text_color": "#F1C66E",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_family": "Arial"
+    }
+  ],
+  "metrics": {
+    "element_count": 183,
+    "text_element_count": 80,
+    "visual_component_count": 103,
+    "first_pass_visual_component_count": 7,
+    "second_pass_visual_component_count": 96,
+    "heuristic_text_region_count": 40,
+    "visual_passes": 2,
+    "source_width_px": 1999,
+    "source_height_px": 1125
+  },
+  "warnings": []
+}
